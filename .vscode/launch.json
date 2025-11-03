@@ -1,0 +1,60 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Maxsurf Connector",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/herramientas/maxsurf_integration/maxsurf_connector.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/herramientas"
+            }
+        },
+        {
+            "name": "Python: Hull Designer",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/herramientas/maxsurf_integration/hull_design/hull_designer.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/herramientas"
+            }
+        },
+        {
+            "name": "Python: Stability Analyzer",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/herramientas/maxsurf_integration/stability/stability_analyzer.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/herramientas"
+            }
+        },
+        {
+            "name": "Python: Tank Designer",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/herramientas/maxsurf_integration/tanks/tank_designer.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/herramientas"
+            }
+        },
+        {
+            "name": "Python: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/herramientas"
+            }
+        }
+    ]
+}

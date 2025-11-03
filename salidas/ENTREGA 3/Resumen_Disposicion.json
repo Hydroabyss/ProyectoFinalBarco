@@ -1,0 +1,250 @@
+{
+  "buque": {
+    "nombre": "Buque de carga (referencia)",
+    "eslora_total_m": 107.0,
+    "eslora_entre_perpendiculares_m": 105.2,
+    "manga_m": 15.99,
+    "puntal_m": 7.9,
+    "calado_m": 6.2,
+    "coeficiente_de_bloque": 0.7252,
+    "coeficiente_prismatico": 0.74,
+    "coeficiente_de_seccion_media": 0.98
+  },
+  "mamparos": [
+    {
+      "nombre": "Mamparo pique de proa",
+      "posicion_m": 6.0,
+      "descripcion": "Cierra el pique de proa y soporta el guinche/pa\u00f1o de cadenas."
+    },
+    {
+      "nombre": "Mamparo c\u00e1mara de m\u00e1quinas (proa)",
+      "posicion_m": 82.0,
+      "descripcion": "Separa bodega 3 de la c\u00e1mara de m\u00e1quinas."
+    },
+    {
+      "nombre": "Mamparo c\u00e1mara de m\u00e1quinas (popa)",
+      "posicion_m": 97.0,
+      "descripcion": "Limita la c\u00e1mara de m\u00e1quinas y antecede al pique de popa."
+    },
+    {
+      "nombre": "Mamparo pique de popa",
+      "posicion_m": 105.2,
+      "descripcion": "Aloja tim\u00f3n, eje y tanque de lastre de popa."
+    }
+  ],
+  "espacios": [
+    {
+      "nombre": "Pique de proa",
+      "inicio_m": 0.0,
+      "fin_m": 6.0,
+      "uso": "Lastre, cadena y pa\u00f1oles de amarras."
+    },
+    {
+      "nombre": "Bodega 1",
+      "inicio_m": 6.0,
+      "fin_m": 33.0,
+      "uso": "Carga general / contenedores."
+    },
+    {
+      "nombre": "Bodega 2",
+      "inicio_m": 33.0,
+      "fin_m": 60.0,
+      "uso": "Carga general central."
+    },
+    {
+      "nombre": "Bodega 3",
+      "inicio_m": 60.0,
+      "fin_m": 82.0,
+      "uso": "Carga y pa\u00f1oles de servicio."
+    },
+    {
+      "nombre": "C\u00e1mara de m\u00e1quinas",
+      "inicio_m": 82.0,
+      "fin_m": 97.0,
+      "uso": "Motor principal, auxiliares, cuadro el\u00e9ctrico."
+    },
+    {
+      "nombre": "Pique de popa",
+      "inicio_m": 97.0,
+      "fin_m": 105.2,
+      "uso": "Tim\u00f3n, ejes y tanque de lastre."
+    }
+  ],
+  "tanques": [
+    {
+      "nombre": "DB Proa",
+      "servicio": "Lastre de ajuste y reserva FO",
+      "inicio_m": 6.0,
+      "fin_m": 33.0,
+      "volumen_m3": 269.92148157,
+      "notas": "Factor de llenado del 92% para compensar refuerzos y tuber\u00edas.",
+      "altura_media_m": 0.7995,
+      "ancho_efectivo_m": 13.5915,
+      "factor_utilizacion": 0.92
+    },
+    {
+      "nombre": "DB Centro",
+      "servicio": "Combustible pesado / lastre",
+      "inicio_m": 33.0,
+      "fin_m": 60.0,
+      "volumen_m3": 269.92148157,
+      "notas": "Factor de llenado del 92% para compensar refuerzos y tuber\u00edas.",
+      "altura_media_m": 0.7995,
+      "ancho_efectivo_m": 13.5915,
+      "factor_utilizacion": 0.92
+    },
+    {
+      "nombre": "DB Aft",
+      "servicio": "Combustible y lastre",
+      "inicio_m": 60.0,
+      "fin_m": 82.0,
+      "volumen_m3": 219.93602202,
+      "notas": "Factor de llenado del 92% para compensar refuerzos y tuber\u00edas.",
+      "altura_media_m": 0.7995,
+      "ancho_efectivo_m": 13.5915,
+      "factor_utilizacion": 0.92
+    },
+    {
+      "nombre": "DB M\u00e1quina",
+      "servicio": "Servicio motor principal",
+      "inicio_m": 82.0,
+      "fin_m": 97.0,
+      "volumen_m3": 149.95637865,
+      "notas": "Factor de llenado del 92% para compensar refuerzos y tuber\u00edas.",
+      "altura_media_m": 0.7995,
+      "ancho_efectivo_m": 13.5915,
+      "factor_utilizacion": 0.92
+    },
+    {
+      "nombre": "Wing tank babor",
+      "servicio": "Fuel oil alimentaci\u00f3n",
+      "inicio_m": 83.0,
+      "fin_m": 95.0,
+      "volumen_m3": 113.31058939200001,
+      "notas": "Secci\u00f3n triangular; factor 0.88 por refuerzos.",
+      "altura_media_m": 6.1005,
+      "ancho_efectivo_m": 3.5178000000000003,
+      "factor_utilizacion": 0.88
+    },
+    {
+      "nombre": "Wing tank estribor",
+      "servicio": "Fuel oil alimentaci\u00f3n",
+      "inicio_m": 83.0,
+      "fin_m": 95.0,
+      "volumen_m3": 113.31058939200001,
+      "notas": "Sim\u00e9trico al tanque de babor.",
+      "altura_media_m": 6.1005,
+      "ancho_efectivo_m": 3.5178000000000003,
+      "factor_utilizacion": 0.88
+    },
+    {
+      "nombre": "Day tank",
+      "servicio": "Suministro diario motor principal",
+      "inicio_m": 90.0,
+      "fin_m": 92.0,
+      "volumen_m3": 4.618141200776995,
+      "notas": "Tanque cil\u00edndrico vertical dentro de la c\u00e1mara de m\u00e1quinas.",
+      "altura_media_m": 3.0,
+      "ancho_efectivo_m": 1.4,
+      "factor_utilizacion": 0.95
+    }
+  ],
+  "bodegas": [
+    {
+      "bodega": "Bodega 1",
+      "inicio_m": 6.0,
+      "fin_m": 33.0,
+      "largo_m": 27.0,
+      "volumen_m3": 1944.0801900000001
+    },
+    {
+      "bodega": "Bodega 2",
+      "inicio_m": 33.0,
+      "fin_m": 60.0,
+      "largo_m": 27.0,
+      "volumen_m3": 1944.0801900000001
+    },
+    {
+      "bodega": "Bodega 3",
+      "inicio_m": 60.0,
+      "fin_m": 82.0,
+      "largo_m": 22.0,
+      "volumen_m3": 1584.06534
+    }
+  ],
+  "consumo_combustible": {
+    "autonomia_dias": 12,
+    "consumo_toneladas_dia": 5.0,
+    "densidad_toneladas_m3": 0.85,
+    "volumen_requerido_m3": 70.58823529411765,
+    "volumen_carga_objetivo_m3": 5000.0,
+    "volumen_carga_disponible_m3": 5472.22572
+  },
+  "resumen_tanques": [
+    {
+      "tanque": "DB Proa",
+      "servicio": "Lastre de ajuste y reserva FO",
+      "volumen_m3": 269.92148157,
+      "porcentaje_total": 23.657096463548687
+    },
+    {
+      "tanque": "DB Centro",
+      "servicio": "Combustible pesado / lastre",
+      "volumen_m3": 269.92148157,
+      "porcentaje_total": 23.657096463548687
+    },
+    {
+      "tanque": "DB Aft",
+      "servicio": "Combustible y lastre",
+      "volumen_m3": 219.93602202,
+      "porcentaje_total": 19.27615267400263
+    },
+    {
+      "tanque": "DB M\u00e1quina",
+      "servicio": "Servicio motor principal",
+      "volumen_m3": 149.95637865,
+      "porcentaje_total": 13.142831368638157
+    },
+    {
+      "tanque": "Wing tank babor",
+      "servicio": "Fuel oil alimentaci\u00f3n",
+      "volumen_m3": 113.31058939200001,
+      "porcentaje_total": 9.931034491943274
+    },
+    {
+      "tanque": "Wing tank estribor",
+      "servicio": "Fuel oil alimentaci\u00f3n",
+      "volumen_m3": 113.31058939200001,
+      "porcentaje_total": 9.931034491943274
+    },
+    {
+      "tanque": "Day tank",
+      "servicio": "Suministro diario motor principal",
+      "volumen_m3": 4.618141200776995,
+      "porcentaje_total": 0.40475404637528684
+    },
+    {
+      "tanque": "Total disponible",
+      "servicio": "Suma de tanques definidos",
+      "volumen_m3": 1140.974683794777,
+      "porcentaje_total": 100.0
+    }
+  ],
+  "balance_combustible": [
+    {
+      "concepto": "Volumen requerido para autonom\u00eda",
+      "valor_m3": 70.58823529411765,
+      "porcentaje_sobre_requerido": 100.0
+    },
+    {
+      "concepto": "Volumen disponible en tanques",
+      "valor_m3": 1140.974683794777,
+      "porcentaje_sobre_requerido": 1616.3808020426006
+    },
+    {
+      "concepto": "Margen neto",
+      "valor_m3": 1070.3864485006595,
+      "porcentaje_sobre_requerido": 1516.3808020426006
+    }
+  ]
+}

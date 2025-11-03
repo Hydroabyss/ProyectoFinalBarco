@@ -1,0 +1,25 @@
+{
+  "timestamp": "2025-11-03T06:05:23Z",
+  "backend": "mock",
+  "parametros": {
+    "loa_m": 103.81,
+    "ratio_loa_lpp": 0.97,
+  "beam_m": 15.99,
+  "depth_m": 7.9,
+    "draft_m": 6.2,
+    "template": "Cargo Vessel",
+    "descripcion": "Modelo base derivado del ejemplo 'Cargo Vessel' de Maxsurf con ajustes paramétricos para buque quimiquero de referencia.",
+  "lpp_m": 105.2
+  },
+  "hidrostaticas": {
+    "displacement_t": 5660.333679,
+    "Cb": 0.55,
+    "Cm": 0.98,
+    "Cp": 0.5612244897959184,
+    "LCB_m": 55.0193
+  },
+  "notas": [
+    "Profundidad (depth) introducida para referencia; Maxsurf mock solo utiliza calado.",
+    "En Windows con Maxsurf real se obtendrán coeficientes y geometría completos."
+  ]
+}

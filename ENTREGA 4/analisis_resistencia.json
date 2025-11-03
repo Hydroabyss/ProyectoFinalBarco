@@ -1,0 +1,218 @@
+{
+  "metadata": {
+    "titulo": "Analisis de Resistencia Estructural - Buque Grupo 9",
+    "fecha": "2025-11-01",
+    "fuente_datos": "salidas/ENTREGA 3/Dimensiones_Estructurales_Detalladas.csv",
+    "normativa": "DNV-RU-SHIP Pt.3 Ch.3-6",
+    "autor": "Sistema automatizado",
+    "version": "2.0"
+  },
+  "datos_principales": {
+    "Lpp": 105.2,
+    "B": 15.99,
+    "D": 7.9,
+    "T": 6.2,
+    "FB": 1.7,
+    "desplazamiento": 7028.213,
+    "altura_doble_fondo": 1.2,
+    "ancho_doble_costado": 1.8,
+    "manga_interior": 12.39,
+    "espaciamiento_cuadernas": 0.7
+  },
+  "espesores_oficiales": {
+    "fondo_exterior": 22,
+    "costado": 20,
+    "cubierta": 12,
+    "fondo_interior": 14,
+    "mamparo_longitudinal": 12,
+    "cubierta_escotilla": 16
+  },
+  "perfiles_oficiales": {
+    "varengas": {
+      "tipo": "Bulb flat",
+      "dimensiones": "400x12x(150x20)",
+      "altura": 400,
+      "alma": 12,
+      "ala_ancho": 150,
+      "ala_espesor": 20,
+      "area": 68.4,
+      "inercia": 15420,
+      "modulo": 771
+    },
+    "cuadernas": {
+      "tipo": "T-bar",
+      "dimensiones": "300x10x(120x16)",
+      "altura": 300,
+      "alma": 10,
+      "ala_ancho": 120,
+      "ala_espesor": 16,
+      "area": 52.8,
+      "inercia": 8960,
+      "modulo": 597
+    },
+    "baos_cubierta": {
+      "tipo": "T-bar",
+      "dimensiones": "250x10x(100x14)",
+      "altura": 250,
+      "alma": 10,
+      "ala_ancho": 100,
+      "ala_espesor": 14,
+      "area": 41.2,
+      "inercia": 5830,
+      "modulo": 466
+    },
+    "longitudinales": {
+      "tipo": "Bulb flat",
+      "dimensiones": "200x8",
+      "altura": 200,
+      "alma": 8,
+      "area": 28.8,
+      "inercia": 2140,
+      "modulo": 214
+    }
+  },
+  "presiones_calculo": {
+    "fondo": {
+      "presion": 62.34,
+      "formula": "rho * g * h",
+      "parametros": {
+        "rho": 1.025,
+        "g": 9.81,
+        "h": 6.2
+      }
+    },
+    "costado": {
+      "presion": 31.17,
+      "formula": "0.5 * rho * g * h",
+      "parametros": {
+        "rho": 1.025,
+        "g": 9.81,
+        "h": 6.2
+      }
+    },
+    "cubierta": {
+      "presion": 10.0,
+      "formula": "carga distribuida",
+      "parametros": {
+        "carga": 10.0
+      }
+    }
+  },
+  "esfuerzos_calculados": {
+    "fondo": {
+      "espesor_real": 22,
+      "presion": 62.34,
+      "tension_calculada": 168.2,
+      "tension_admisible": 355,
+      "factor_seguridad": 2.11,
+      "estado": "CUMPLE"
+    },
+    "costado": {
+      "espesor_real": 20,
+      "presion": 31.17,
+      "tension_calculada": 95.4,
+      "tension_admisible": 355,
+      "factor_seguridad": 3.72,
+      "estado": "CUMPLE"
+    },
+    "cubierta": {
+      "espesor_real": 12,
+      "presion": 10.0,
+      "tension_calculada": 28.3,
+      "tension_admisible": 355,
+      "factor_seguridad": 12.54,
+      "estado": "CUMPLE"
+    },
+    "fondo_interior": {
+      "espesor_real": 14,
+      "presion": 62.34,
+      "tension_calculada": 185.6,
+      "tension_admisible": 355,
+      "factor_seguridad": 1.91,
+      "estado": "CUMPLE"
+    },
+    "mamparo_longitudinal": {
+      "espesor_real": 12,
+      "presion": 31.17,
+      "tension_calculada": 51.2,
+      "tension_admisible": 355,
+      "factor_seguridad": 6.93,
+      "estado": "CUMPLE"
+    }
+  },
+  "modulo_resistente": {
+    "momento_inercia_total": 1284.5,
+    "momento_inercia_efectiva": 1156.1,
+    "distancia_maxima": 4.05,
+    "modulo_calculado": 285.5,
+    "modulo_requerido_dnv": 252.2,
+    "margen_seguridad": 13.2,
+    "estado": "CUMPLE"
+  },
+  "verificacion_dnv_espesores": {
+    "fondo_exterior": {
+      "espesor_real": 22,
+      "espesor_minimo_dnv": 11.8,
+      "factor_vs_minimo": 1.86,
+      "estado": "CUMPLE"
+    },
+    "costado": {
+      "espesor_real": 20,
+      "espesor_minimo_dnv": 7.2,
+      "factor_vs_minimo": 2.78,
+      "estado": "CUMPLE"
+    },
+    "cubierta": {
+      "espesor_real": 12,
+      "espesor_minimo_dnv": 3.4,
+      "factor_vs_minimo": 3.53,
+      "estado": "CUMPLE"
+    },
+    "fondo_interior": {
+      "espesor_real": 14,
+      "espesor_minimo_dnv": 11.8,
+      "factor_vs_minimo": 1.19,
+      "estado": "CUMPLE"
+    }
+  },
+  "verificacion_compartimentacion": {
+    "altura_doble_fondo": {
+      "valor_real": 1.2,
+      "valor_minimo_dnv": 0.799,
+      "factor_cumplimiento": 1.5,
+      "estado": "CUMPLE"
+    },
+    "ancho_doble_costado": {
+      "valor_real": 1.8,
+      "valor_minimo_solas": 1.066,
+      "factor_cumplimiento": 1.69,
+      "estado": "CUMPLE"
+    }
+  },
+  "estabilidad_maxsurf": {
+    "desplazamiento": 7028.213,
+    "calado_escantillonado": 6.477,
+    "kg_real": 6.48,
+    "kmt": 7.16,
+    "gmt": 0.68,
+    "kg_estimado": 6.56,
+    "diferencia_kg": -1.2,
+    "estado": "ADECUADO"
+  },
+  "momentos_flectores": {
+    "aguas_tranquilas": 11900,
+    "ola_arrufo": 18200,
+    "ola_quebranto": -16800,
+    "maximo_absoluto": 18200,
+    "momento_resistente": 28700,
+    "factor_seguridad": 1.58,
+    "estado": "CUMPLE"
+  },
+  "cumplimiento_global": {
+    "total_requisitos": 7,
+    "requisitos_cumplidos": 7,
+    "porcentaje_cumplimiento": 100.0,
+    "estado_general": "CUMPLE TODOS LOS REQUISITOS",
+    "recomendacion": "El buque con espesores oficiales cumple todos los requisitos DNV y SOLAS. No se requieren modificaciones."
+  }
+}

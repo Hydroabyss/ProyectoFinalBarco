@@ -1,0 +1,15 @@
+clave,valor
+loa_m,103.81
+ratio_loa_lpp,0.97
+beam_m,15.6
+depth_m,7.7
+draft_m,6.2
+template,Cargo Vessel
+descripcion,Modelo base derivado del ejemplo 'Cargo Vessel' de Maxsurf con ajustes paramétricos para buque quimiquero de referencia.
+lpp_m,105.2
+displacement_t,5660.333679
+Cb,0.55
+Cm,0.98
+Cp,0.5612244897959184
+LCB_m,55.0193
+backend,mock

@@ -1,0 +1,29 @@
+{
+  "fecha_verificacion": "2025-11-02 23:23",
+  "normativa_aplicada": "DNV GL (yacht)",
+  "resultados": {
+    "geometria": {
+      "relacion_LB": {
+        "relacion_LB": 4.253521126760564,
+        "min": 2.8,
+        "max": 5.0,
+        "cumple": true
+      },
+      "codigo_dnv": "(indicativo)"
+    },
+    "estructural": {
+      "momento_flexion": 466.234848,
+      "limite_material": 235000000.0,
+      "cumple": true,
+      "codigo_dnv": "Pt.3 Ch.1/Ch.5 (indicativo)"
+    },
+    "estabilidad": {
+      "GM_min": null,
+      "area_GZ": null,
+      "cumple": null,
+      "codigo_dnv": "Pt.3 Ch.3 (indicativo)"
+    }
+  },
+  "cumplimiento_total": false,
+  "observaciones": []
+}

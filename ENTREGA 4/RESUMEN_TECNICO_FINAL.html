@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>RESUMEN_TECNICO_FINAL</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="config/pandoc_entrega4.css" />
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#resumen-técnico-final-entrega-4"
+id="toc-resumen-técnico-final-entrega-4">RESUMEN TÉCNICO FINAL · ENTREGA
+4</a>
+<ul>
+<li><a href="#buque-de-carga-general---grupo-9"
+id="toc-buque-de-carga-general---grupo-9">Buque de carga general - Grupo
+9</a></li>
+<li><a href="#datos-del-buque-reales" id="toc-datos-del-buque-reales">1.
+DATOS DEL BUQUE (REALES)</a></li>
+<li><a href="#resultados-del-análisis-estructural"
+id="toc-resultados-del-análisis-estructural">2. RESULTADOS DEL ANÁLISIS
+ESTRUCTURAL</a>
+<ul>
+<li><a href="#cumplimiento-normativo-resumen"
+id="toc-cumplimiento-normativo-resumen">2.1 Cumplimiento normativo
+(Resumen)</a></li>
+<li><a href="#análisis-de-tensiones-críticas"
+id="toc-análisis-de-tensiones-críticas">2.2 Análisis de tensiones
+críticas</a></li>
+</ul></li>
+<li><a href="#recomendaciones-técnicas"
+id="toc-recomendaciones-técnicas">3. RECOMENDACIONES TÉCNICAS</a></li>
+<li><a href="#procedimiento-de-implementación"
+id="toc-procedimiento-de-implementación">4. PROCEDIMIENTO DE
+IMPLEMENTACIÓN</a>
+<ul>
+<li><a href="#fase-1-diseño-detallado-2-semanas"
+id="toc-fase-1-diseño-detallado-2-semanas">4.1 Fase 1: Diseño detallado
+(2 semanas)</a></li>
+<li><a href="#fase-2-verificación-normativa-1-semana"
+id="toc-fase-2-verificación-normativa-1-semana">4.2 Fase 2: Verificación
+normativa (1 semana)</a></li>
+<li><a href="#fase-3-documentación-final-1-semana"
+id="toc-fase-3-documentación-final-1-semana">4.3 Fase 3: Documentación
+final (1 semana)</a></li>
+</ul></li>
+<li><a href="#herramientas-y-archivos-disponibles"
+id="toc-herramientas-y-archivos-disponibles">5. HERRAMIENTAS Y ARCHIVOS
+DISPONIBLES</a>
+<ul>
+<li><a href="#scripts-de-análisis" id="toc-scripts-de-análisis">Scripts
+de análisis</a></li>
+<li><a href="#archivos-clave-generados"
+id="toc-archivos-clave-generados">Archivos clave generados</a></li>
+</ul></li>
+<li><a href="#conclusiones-técnicas" id="toc-conclusiones-técnicas">6.
+CONCLUSIONES TÉCNICAS</a>
+<ul>
+<li><a href="#cumplimiento-normativo"
+id="toc-cumplimiento-normativo">Cumplimiento normativo</a></li>
+<li><a href="#impacto-económico" id="toc-impacto-económico">Impacto
+económico</a></li>
+<li><a href="#próximos-pasos" id="toc-próximos-pasos">Próximos
+pasos</a></li>
+<li><a href="#certificación"
+id="toc-certificación">Certificación</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="resumen-técnico-final-entrega-4">RESUMEN TÉCNICO FINAL · ENTREGA
+4</h1>
+<h2 id="buque-de-carga-general---grupo-9">Buque de carga general - Grupo
+9</h2>
+<p><strong>Fecha:</strong> Noviembre 2025<br />
+<strong>Normativa:</strong> DNV-RU-SHIP Pt.3 / SOLAS II-1<br />
+<strong>Documento:</strong> Consolidado técnico-profesional</p>
+<hr />
+<h2 id="datos-del-buque-reales">1. DATOS DEL BUQUE (REALES)</h2>
+<table>
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 25%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parámetro</th>
+<th>Valor</th>
+<th>Fuente</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Eslora entre perpendiculares (Lpp)</td>
+<td>105.20 m</td>
+<td>datos_buque_correctos.py</td>
+</tr>
+<tr>
+<td>Manga (B)</td>
+<td>15.99 m</td>
+<td>datos_buque_correctos.py</td>
+</tr>
+<tr>
+<td>Puntal (D)</td>
+<td>7.90 m</td>
+<td>datos_buque_correctos.py</td>
+</tr>
+<tr>
+<td>Calado de diseño (T)</td>
+<td>6.20 m</td>
+<td>datos_buque_correctos.py</td>
+</tr>
+<tr>
+<td>Calado de escantillonado</td>
+<td>6.477 m</td>
+<td>maxsurf_table.csv</td>
+</tr>
+<tr>
+<td>Desplazamiento (Δ)</td>
+<td>7028 t</td>
+<td>maxsurf_table.csv</td>
+</tr>
+<tr>
+<td>GMt</td>
+<td>0.68 m</td>
+<td>maxsurf_table.csv</td>
+</tr>
+<tr>
+<td>Material</td>
+<td>AH36 (σ_y = 355 MPa)</td>
+<td>datos_buque_correctos.py</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="resultados-del-análisis-estructural">2. RESULTADOS DEL ANÁLISIS
+ESTRUCTURAL</h2>
+<h3 id="cumplimiento-normativo-resumen">2.1 Cumplimiento normativo
+(Resumen)</h3>
+<table>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 20%" />
+<col style="width: 28%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr>
+<th>Requisito</th>
+<th>Normativa</th>
+<th>Valor real</th>
+<th>Valor requerido</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Altura doble fondo</td>
+<td>DNV Pt.3 Ch.2 Sec.3</td>
+<td>1.20 m</td>
+<td>≥ 0.799 m</td>
+<td>✓ CUMPLE</td>
+</tr>
+<tr>
+<td>Ancho doble costado</td>
+<td>SOLAS II-1 Reg.13</td>
+<td>1.80 m</td>
+<td>≥ 1.066 m</td>
+<td>✓ CUMPLE</td>
+</tr>
+<tr>
+<td>Espesor fondo</td>
+<td>DNV Pt.3 Ch.6 Sec.3.1.1</td>
+<td>22.0 mm</td>
+<td>≥ 10.8 mm</td>
+<td>✓ CUMPLE</td>
+</tr>
+<tr>
+<td>Espesor cubierta</td>
+<td>DNV Pt.3 Ch.6 Sec.3.1.1</td>
+<td>12.0 mm</td>
+<td>≥ 3.4 mm</td>
+<td>✓ CUMPLE</td>
+</tr>
+<tr>
+<td>Espesor costado/forro exterior</td>
+<td>DNV Pt.3 Ch.6 Sec.3.1.1</td>
+<td>20.0 mm</td>
+<td>≥ 7.2 mm</td>
+<td>✓ CUMPLE</td>
+</tr>
+<tr>
+<td>Módulo resistente</td>
+<td>DNV Pt.3 Ch.3 Sec.2</td>
+<td>285.5 m³</td>
+<td>≥ 252.2 m³</td>
+<td>✓ CUMPLE</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Cumplimiento global: 6/6 (100%)</strong></p>
+<h3 id="análisis-de-tensiones-críticas">2.2 Análisis de tensiones
+críticas</h3>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>σ (MPa)</th>
+<th>σ_admisible (MPa)</th>
+<th>FS</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Forro fondo</td>
+<td>168.2</td>
+<td>355</td>
+<td>2.11</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>Forro costado</td>
+<td>95.4</td>
+<td>355</td>
+<td>3.72</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>Cubierta</td>
+<td>28.3</td>
+<td>355</td>
+<td>12.54</td>
+<td>✓</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Elementos críticos:</strong> Ninguno. Todos los espesores
+oficiales cumplen con margen.</p>
+<hr />
+<h2 id="recomendaciones-técnicas">3. RECOMENDACIONES TÉCNICAS</h2>
+<ul>
+<li>Mantener espesores oficiales (fondo 22 mm, costado 20 mm, cubierta
+12 mm) y perfiles definidos; no se identifican no conformidades.</li>
+<li>Conservar la malla de refuerzos (longitudinales en doble
+fondo/costado/cubierta) y el espaciamiento s=0.70 m en cuadernas.</li>
+<li>Recalcular periódicamente con
+<code>python3 herramientas/analizar_cuaderna_completo_v2.py</code> ante
+cualquier cambio de carga o huecos en cubierta.</li>
+</ul>
+<hr />
+<h2 id="procedimiento-de-implementación">4. PROCEDIMIENTO DE
+IMPLEMENTACIÓN</h2>
+<h3 id="fase-1-diseño-detallado-2-semanas">4.1 Fase 1: Diseño detallado
+(2 semanas)</h3>
+<ol type="1">
+<li>Actualizar modelo 3D con nuevos espesores</li>
+<li>Diseñar detalles de uniones soldadas</li>
+<li>Recalcular pesos y centro de gravedad</li>
+<li>Generar planos de producción</li>
+</ol>
+<h3 id="fase-2-verificación-normativa-1-semana">4.2 Fase 2: Verificación
+normativa (1 semana)</h3>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Ejecutar verificaciones</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> herramientas/analizar_cuaderna_completo_v2.py</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> herramientas/verificador_dnv_cuaderna.py</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Validar con Maxsurf</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Importar nuevo modelo y verificar estabilidad</span></span></code></pre></div>
+<h3 id="fase-3-documentación-final-1-semana">4.3 Fase 3: Documentación
+final (1 semana)</h3>
+<ul>
+<li>Actualizar DOCUMENTO_ENTREGA_FINAL.md</li>
+<li>Generar nuevos planos técnicos</li>
+<li>Certificar cumplimiento DNV</li>
+</ul>
+<hr />
+<h2 id="herramientas-y-archivos-disponibles">5. HERRAMIENTAS Y ARCHIVOS
+DISPONIBLES</h2>
+<h3 id="scripts-de-análisis">Scripts de análisis</h3>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Análisis completo</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> herramientas/analizar_cuaderna_completo_v2.py</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Verificación DNV</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> herramientas/verificador_dnv_cuaderna.py</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Generación de planos</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> herramientas/generar_cuaderna_maestra.py</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualizaciones interactivas</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> herramientas/visualizacion_interactiva_cuaderna.py</span></code></pre></div>
+<h3 id="archivos-clave-generados">Archivos clave generados</h3>
+<pre><code>ENTREGA 4/
+├── DOCUMENTO_ENTREGA_FINAL.md          # Documento principal
+├── analisis_resistencia.json           # Resultados estructurales
+├── verificacion_dnv_cuaderna.json      # Cumplimiento normativo
+├── graficos/
+│   ├── plano_cargas_cuaderna.png       # Presiones de diseño
+│   ├── plano_esfuerzos_cuaderna.png    # Mapa de tensiones
+│   └── curva_momento_flector.png       # Distribución longitudinal
+└── graficos_interactivos/
+    ├── dashboard_completo.html         # Panel principal interactivo
+    ├── modelo_3d_cuaderna.html         # Vista 3D estructura
+    └── mapa_esfuerzos_interactivo.html # Tensiones interactivas</code></pre>
+<hr />
+<h2 id="conclusiones-técnicas">6. CONCLUSIONES TÉCNICAS</h2>
+<h3 id="cumplimiento-normativo">Cumplimiento normativo</h3>
+<ul>
+<li><strong>CUMPLE:</strong> 4 de 6 requisitos críticos (66.7%)</li>
+<li><strong>NO CUMPLE:</strong> Forro exterior (FS = 0.36) y Módulo
+resistente (déficit 94.9%)</li>
+<li><strong>CRÍTICO:</strong> El forro exterior requiere intervención
+inmediata</li>
+</ul>
+<h3 id="impacto-económico">Impacto económico</h3>
+<ul>
+<li><strong>Costo de refuerzos:</strong> ~95 t de acero adicional</li>
+<li><strong>Incremento de peso:</strong> 3.9% del peso estructural</li>
+<li><strong>Impacto en estabilidad:</strong> Reducción GMt 7.4%
+(aceptable)</li>
+</ul>
+<h3 id="próximos-pasos">Próximos pasos</h3>
+<ol type="1">
+<li><strong>INMEDIATO:</strong> Aprobar refuerzo forro exterior (Opción
+B)</li>
+<li><strong>CORTO PLAZO:</strong> Implementar refuerzos
+longitudinales</li>
+<li><strong>MEDIO PLAZO:</strong> Verificar con modelo completo en
+Maxsurf</li>
+</ol>
+<h3 id="certificación">Certificación</h3>
+<p>Este análisis cumple con los requisitos de: - DNV-RU-SHIP Pt.3 (2023)
+- SOLAS II-1 Reg.13 - Código de Buques de la FNB</p>
+<hr />
+<p><strong>Documento técnico preparado para evaluación y
+aprobación.</strong><br />
+<strong>Valores basados en datos reales del Buque Grupo 9 y normativa
+DNV vigente.</strong></p>
+</body>
+</html>

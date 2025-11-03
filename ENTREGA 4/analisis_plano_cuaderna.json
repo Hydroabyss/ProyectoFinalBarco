@@ -1,0 +1,152 @@
+{
+  "archivo": "salidas/ENTREGA 3 v4/Corte_Transversal_Cuaderna_Maestra_Detallado.dxf",
+  "fecha_analisis": "2025-11-20T09:25:43.939635",
+  "capas": {
+    "CASCO_EXTERIOR": {
+      "existe": true,
+      "entidades": 16,
+      "tipos": [
+        "LINE",
+        "ARC"
+      ]
+    },
+    "ESTRUCTURA_PRIMARIA": {
+      "existe": true,
+      "entidades": 44,
+      "tipos": [
+        "LINE",
+        "LWPOLYLINE"
+      ]
+    },
+    "ESTRUCTURA_SECUNDARIA": {
+      "existe": true,
+      "entidades": 31,
+      "tipos": [
+        "LWPOLYLINE"
+      ]
+    },
+    "MAMPAROS": {
+      "existe": true,
+      "entidades": 4,
+      "tipos": [
+        "LINE"
+      ]
+    },
+    "TANQUES": {
+      "existe": true,
+      "entidades": 0,
+      "tipos": []
+    },
+    "LINEA_AGUA": {
+      "existe": true,
+      "entidades": 1,
+      "tipos": [
+        "LINE"
+      ]
+    },
+    "COTAS": {
+      "existe": true,
+      "entidades": 28,
+      "tipos": [
+        "LINE",
+        "TEXT"
+      ]
+    },
+    "TEXTO": {
+      "existe": true,
+      "entidades": 11,
+      "tipos": [
+        "TEXT",
+        "LWPOLYLINE",
+        "MTEXT"
+      ]
+    },
+    "EJES": {
+      "existe": true,
+      "entidades": 3,
+      "tipos": [
+        "LINE"
+      ]
+    }
+  },
+  "geometria": {
+    "lineas": 75,
+    "arcos": 4,
+    "circulos": 0,
+    "polilineas": 42,
+    "splines": 0,
+    "textos": 17,
+    "cotas": 0
+  },
+  "estructura": {
+    "casco_exterior": {
+      "existe": true,
+      "entidades": 16,
+      "tipos": [
+        "LINE",
+        "ARC"
+      ]
+    },
+    "estructura_primaria": {
+      "existe": true,
+      "entidades": 44,
+      "tipos": [
+        "LINE",
+        "LWPOLYLINE"
+      ]
+    },
+    "estructura_secundaria": {
+      "existe": true,
+      "entidades": 31,
+      "tipos": [
+        "LWPOLYLINE"
+      ]
+    },
+    "mamparos": {
+      "existe": true,
+      "entidades": 4,
+      "tipos": [
+        "LINE"
+      ]
+    },
+    "tanques": {
+      "existe": false,
+      "entidades": 0,
+      "tipos": []
+    }
+  },
+  "dimensiones": {
+    "manga_total": null,
+    "puntal_total": null,
+    "doble_fondo": null,
+    "doble_costado": null,
+    "bbox": {
+      "min_x": -9.8,
+      "min_y": -2.65,
+      "max_x": 12.85,
+      "max_y": 8.7
+    },
+    "manga_estimada": 22.65,
+    "puntal_estimado": 11.35
+  },
+  "errores": [],
+  "advertencias": [
+    "No se encontraron cotas en el plano"
+  ],
+  "info": [
+    "Capa CASCO_EXTERIOR encontrada con 16 entidades",
+    "Capa ESTRUCTURA_PRIMARIA encontrada con 44 entidades",
+    "Capa ESTRUCTURA_SECUNDARIA encontrada con 31 entidades",
+    "Capa MAMPAROS encontrada con 4 entidades",
+    "Capa TANQUES encontrada con 0 entidades",
+    "Capa LINEA_AGUA encontrada con 1 entidades",
+    "Capa COTAS encontrada con 28 entidades",
+    "Capa TEXTO encontrada con 11 entidades",
+    "Capa EJES encontrada con 3 entidades"
+  ],
+  "resumen": {
+    "total_errores": 0,
+    "total_advertencias": 1,
+    "estado": "APROBADO"
+  }
+}

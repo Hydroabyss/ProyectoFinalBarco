@@ -1,0 +1,30 @@
+key,raw_value,parsed_value,unit,notes
+Displacement,"7028213 kg",7028213,kg,"From screenshot: displacement in kg"
+Volume_displaced,"6856.793 m^3",6856.793,m^3,"Volume displaced from screenshot"
+Draft_Amidships,"6.477 m",6.477,m,"Draft amidships"
+Immersed_depth,"6.476 m",6.476,m,"Immersed depth"
+WL_Length,"96.948 m",96.948,m,"Waterline length"
+Beam_max_WL,"15.545 m",15.545,m,"Beam at waterline max extents"
+Wetted_Area,"2270.459 m^2",2270.459,m^2,"Wetted surface area"
+Max_section_area,"98.053 m^2",98.053,m^2,"Max sectional area"
+Waterplane_Area,"1325.413 m^2",1325.413,m^2,"Waterplane area"
+Prismatic_coeff_Cp,"0.721",0.721,,
+Block_coeff_Cb,"0.703",0.703,,
+Max_Section_area_coeff_Cm,"0.982",0.982,,
+Waterpl_area_coeff_Cwp,"0.879",0.879,,
+LCB_length,"-51.233 fro",-51.233,,"Raw string contains 'fro' — check meaning (likely mm from midship or % of L)"
+LCF_length,"-53.605 fro",-53.605,,"Raw string contains 'fro' — check meaning"
+LCB_percent,"-52.846 fro",-52.846,%,"Raw percent-like value; verify sign/units"
+LCF_percent,"-55.293 fro",-55.293,%,"Raw percent-like value; verify sign/units"
+KB,"3.578 m",3.578,m,"Center of buoyancy above keel"
+KG_fluid,"6.477 m",6.477,m,"Model KG (fluid) — verify corresponds to masses input"
+BMt,"3.582 m",3.582,m,"Transverse BM"
+BML,"121.702 m",121.702,m,"Suspicious: unusually large value; likely unit mismatch or OCR error"
+GMt_corrected,"0.683 m",0.683,m,"Corrected GM (table)"
+GML,"118.803 m",118.803,m,"Suspicious: likely unit mismatch or OCR error"
+KMt,"7.159 m",7.159,m,"KM (transverse)"
+KML,"125.279 m",125.279,m,"Suspicious: likely unit mismatch or OCR error"
+Immersion_TPc,"13.585 tonn",13.585,tonn,"Check unit spelling (tonn)"
+MTc,"83.496 tonn",83.496,tonn,"Check meaning (moment tonnage?)"
+RM_1deg,"83755.226 kg",83755.226,kgm,"Righting moment at 1° (kg·m)"
+Length_Beam_ratio,"6.237",6.237,,

@@ -1,0 +1,117 @@
+{
+  "buque": {
+    "identificacion": {
+      "nombre": "Buque Grupo 9",
+      "tipo": "Buque de carga general",
+      "clase": "DNV",
+      "fecha_analisis": "2025-11-11 19:42:15"
+    },
+    "dimensiones_principales": {
+      "Lpp_m": 105.2,
+      "manga_m": 15.99,
+      "puntal_m": 7.9,
+      "calado_m": 6.2,
+      "francobordo_m": 1.7,
+      "desplazamiento_t": 7752.9,
+      "Cb": 0.7252
+    },
+    "estructura": {
+      "doble_fondo_m": 1.2,
+      "doble_costado_m": 1.8,
+      "manga_interior_m": 12.39,
+      "espaciamiento_cuadernas_m": 0.7,
+      "segunda_cubierta_m": 5.2,
+      "cubierta_principal_m": 7.9
+    },
+    "material": {
+      "grado": "AH36",
+      "limite_elastico_MPa": 355,
+      "normativa": "DNV Pt.3 Ch.6"
+    },
+    "compartimentacion": {
+      "pique_popa": {
+        "inicio_m": 0.0,
+        "fin_m": 8.2,
+        "longitud_m": 8.2
+      },
+      "camara_maquinas": {
+        "inicio_m": 8.2,
+        "fin_m": 23.2,
+        "longitud_m": 15.0
+      },
+      "bodega_3": {
+        "inicio_m": 23.2,
+        "fin_m": 45.2,
+        "longitud_m": 22.0
+      },
+      "bodega_2": {
+        "inicio_m": 45.2,
+        "fin_m": 72.2,
+        "longitud_m": 27.0
+      },
+      "bodega_1": {
+        "inicio_m": 72.2,
+        "fin_m": 99.2,
+        "longitud_m": 27.0
+      },
+      "pique_proa": {
+        "inicio_m": 99.2,
+        "fin_m": 105.2,
+        "longitud_m": 6.0
+      }
+    },
+    "propulsion": {
+      "motor_principal": {
+        "modelo": "MAN 6S50ME-C",
+        "potencia_kW": 8500,
+        "rpm": 127,
+        "cilindros": 6,
+        "tipo": "Diesel 2 tiempos"
+      },
+      "generadores": {
+        "modelo": "CAT 3512C",
+        "cantidad": 3,
+        "potencia_unitaria_kW": 500,
+        "potencia_total_kW": 1500
+      },
+      "helice": {
+        "diametro_m": 4.2,
+        "palas": 4,
+        "tipo": "Paso fijo"
+      },
+      "eje": {
+        "diametro_m": 0.45,
+        "longitud_bocina_m": 8.5
+      }
+    }
+  },
+  "verificaciones_dnv": {
+    "relacion_LB": {
+      "relacion_LB": 6.579111944965604,
+      "min": 3.0,
+      "max": 7.0,
+      "cumple": true
+    },
+    "doble_fondo": {
+      "altura_real_m": 1.2,
+      "minimo_dnv_m": 0.799,
+      "cumple": true
+    },
+    "doble_costado": {
+      "ancho_real_m": 1.8,
+      "minimo_solas_m": 0.92,
+      "cumple": true
+    },
+    "esfuerzos_longitudinales": {
+      "momento_flexion_vertical": 11891.84435712,
+      "esfuerzo_cortante": 28.2600864,
+      "coeficiente_ola_dnv": 13.8368,
+      "cumple_dnv": true
+    }
+  },
+  "resumen": {
+    "total_verificaciones": 4,
+    "verificaciones_cumplidas": 4,
+    "porcentaje_cumplimiento": 100.0
+  }
+}

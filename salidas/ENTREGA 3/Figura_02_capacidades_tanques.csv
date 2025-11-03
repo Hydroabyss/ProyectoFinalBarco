@@ -1,0 +1,9 @@
+tanque,servicio,volumen_m3,porcentaje_total
+DB Proa,Lastre de ajuste y reserva FO,269.92148157,23.657096463548687
+DB Centro,Combustible pesado / lastre,269.92148157,23.657096463548687
+DB Aft,Combustible y lastre,219.93602202,19.27615267400263
+DB Máquina,Servicio motor principal,149.95637865,13.142831368638157
+Wing tank babor,Fuel oil alimentación,113.31058939200001,9.931034491943274
+Wing tank estribor,Fuel oil alimentación,113.31058939200001,9.931034491943274
+Day tank,Suministro diario motor principal,4.618141200776995,0.40475404637528684
+Total disponible,Suma de tanques definidos,1140.974683794777,100.0

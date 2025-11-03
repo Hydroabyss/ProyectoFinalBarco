@@ -1,0 +1,8 @@
+nombre,servicio,inicio_m,fin_m,volumen_m3,notas,altura_media_m,ancho_efectivo_m,factor_utilizacion
+DB Proa,Lastre de ajuste y reserva FO,72.2,99.2,269.92148157,Factor de llenado del 92% para compensar refuerzos y tuberías.,0.7995,13.5915,0.92
+DB Centro,Combustible pesado / lastre,45.2,72.2,269.92148157,Factor de llenado del 92% para compensar refuerzos y tuberías.,0.7995,13.5915,0.92
+DB Aft,Combustible y lastre,23.2,45.2,219.93602202,Factor de llenado del 92% para compensar refuerzos y tuberías.,0.7995,13.5915,0.92
+DB Máquina,Servicio motor principal,8.2,23.2,149.95637865,Factor de llenado del 92% para compensar refuerzos y tuberías.,0.7995,13.5915,0.92
+Wing tank babor,Fuel oil alimentación,10.2,22.2,113.310589392,Sección triangular; factor 0.88 por refuerzos.,6.1005,3.5178000000000003,0.88
+Wing tank estribor,Fuel oil alimentación,10.2,22.2,113.310589392,Simétrico al tanque de babor.,6.1005,3.5178000000000003,0.88
+Day tank,Suministro diario motor principal,13.2,15.2,4.618141201,Tanque cilíndrico vertical dentro de la cámara de máquinas.,3.0,1.4,0.95

@@ -1,0 +1,5 @@
+nombre,posicion_m,descripcion
+Mamparo pique de popa,0.0,"Aloja timón, eje y tanque de lastre de popa."
+Mamparo cámara de máquinas (popa),8.2,Limita la cámara de máquinas y antecede al pique de popa.
+Mamparo cámara de máquinas (proa),23.2,Separa bodega 3 de la cámara de máquinas.
+Mamparo pique de proa,99.2,Cierra el pique de proa y soporta el guinche/paño de cadenas.

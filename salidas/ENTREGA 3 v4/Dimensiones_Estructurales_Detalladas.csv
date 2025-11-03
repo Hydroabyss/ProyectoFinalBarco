@@ -1,0 +1,38 @@
+CATEGORÍA,ELEMENTO,DIMENSIÓN,VALOR,UNIDAD,NORMATIVA
+,,,,,
+DIMENSIONES PRINCIPALES,Eslora entre perpendiculares,Lpp,105.2,m,Medido
+,Manga,B,15.99,m,Medido
+,Puntal,D,7.9,m,Medido
+,Calado de diseño,T,6.2,m,Medido
+,Francobordo,FB,1.7,m,Calculado (D - T)
+,Desplazamiento,Δ,7752.9,ton,Hidrostático (CB=0.7252)
+,,,,,
+COMPARTIMENTACIÓN,Altura doble fondo,hDB,1.2,m,DNV Pt.3 Ch.2 Sec.3
+,Altura mínima DNV,hDB_min,0.80,m,B/20 = 15.99/20
+,Ancho costado doble,w_DS,1.80,m,SOLAS II-1 Reg.13
+,Manga interior,B_inner,12.39,m,B - 2×w_DS
+,Espaciamiento cuadernas,s,0.70,m,DNV Pt.3 Ch.3
+,,,,,
+ESPESORES DE CHAPAS,Forro de fondo exterior,t_bottom,22,mm,DNV Pt.3 Ch.6
+,Forro de costado,t_side,20,mm,DNV Pt.3 Ch.6
+,Fondo interior,t_inner_bottom,14,mm,DNV Pt.3 Ch.6
+,Mamparo longitudinal,t_inner_side,12,mm,DNV Pt.3 Ch.6
+,Cubierta principal,t_deck,12,mm,DNV Pt.3 Ch.6
+,Cubierta (zona escotilla),t_deck_hatch,16,mm,DNV Pt.3 Ch.6
+,,,,,
+PERFILES ESTRUCTURALES,Altura varengas,h_floor,400,mm,DNV Pt.3 Ch.3
+,Alma varenga,tw_floor,12,mm,DNV Pt.3 Ch.3
+,Ala varenga,bf_floor × tf,150×20,mm,DNV Pt.3 Ch.3
+,Altura cuadernas,h_frame,300,mm,DNV Pt.3 Ch.3
+,Alma cuaderna,tw_frame,10,mm,DNV Pt.3 Ch.3
+,Ala cuaderna,bf_frame × tf,120×16,mm,DNV Pt.3 Ch.3
+,Altura baos cubierta,h_beam,250,mm,DNV Pt.3 Ch.3
+,Alma bao,tw_beam,10,mm,DNV Pt.3 Ch.3
+,Ala bao,bf_beam × tf,100×14,mm,DNV Pt.3 Ch.3
+,Altura longitudinales,h_long,200,mm,DNV Pt.3 Ch.3
+,Alma longitudinal,tw_long,8,mm,DNV Pt.3 Ch.3
+,,,,,
+MATERIAL,Grado de acero,-,AH36,-,DNV
+,Límite elástico,σy,355,MPa,DNV
+,,,,,
+UBICACIÓN,Posición cuaderna maestra,x_MF,52.6,m,Lpp/2 desde proa

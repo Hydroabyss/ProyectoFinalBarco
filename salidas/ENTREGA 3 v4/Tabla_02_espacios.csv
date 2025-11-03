@@ -1,0 +1,7 @@
+nombre,inicio_m,fin_m,uso
+Pique de popa,0.0,8.2,"Timón, ejes y tanque de lastre."
+Cámara de máquinas,8.2,23.2,"Motor principal, auxiliares, cuadro eléctrico."
+Bodega 3,23.2,45.2,Carga y pañoles de servicio.
+Bodega 2,45.2,72.2,Carga general central.
+Bodega 1,72.2,99.2,Carga general / contenedores.
+Pique de proa,99.2,105.2,"Lastre, cadena y pañoles de amarras."

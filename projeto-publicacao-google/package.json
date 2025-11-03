@@ -1,0 +1,24 @@
+{
+    "name": "projeto-publicacao-google",
+    "version": "1.0.0",
+    "description": "Projeto para publicar no Google com verificação de ambiente.",
+    "main": "src/app.ts",
+    "scripts": {
+        "instalar-dependencias": "bash scripts/instalar-dependencias.sh",
+        "verificar-ambiente": "bash scripts/verificar-ambiente.sh",
+        "publicar-google": "bash scripts/publicar-google.sh"
+    },
+    "dependencies": {
+        // Adicione suas dependências aqui
+    },
+    "devDependencies": {
+        // Adicione suas dependências de desenvolvimento aqui
+    },
+    "keywords": [
+        "publicar",
+        "google",
+        "projeto"
+    ],
+    "author": "Seu Nome",
+    "license": "MIT"
+}

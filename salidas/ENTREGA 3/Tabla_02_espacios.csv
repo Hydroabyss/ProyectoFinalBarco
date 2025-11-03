@@ -1,0 +1,7 @@
+nombre,inicio_m,fin_m,uso
+Pique de proa,0.0,6.0,"Lastre, cadena y pañoles de amarras."
+Bodega 1,6.0,33.0,Carga general / contenedores.
+Bodega 2,33.0,60.0,Carga general central.
+Bodega 3,60.0,82.0,Carga y pañoles de servicio.
+Cámara de máquinas,82.0,97.0,"Motor principal, auxiliares, cuadro eléctrico."
+Pique de popa,97.0,105.2,"Timón, ejes y tanque de lastre."

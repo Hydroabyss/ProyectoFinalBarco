@@ -1,0 +1,83 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run: Visual Report",
+            "type": "shell",
+            "command": "source .venv/bin/activate && export PYTHONPATH=\"$(pwd)/herramientas\" && python -m maxsurf_integration visual-report --out \"./salidas/visual\" --basename \"visual_demo\" && open \"./salidas/visual/visual_demo.pdf\"",
+            "group": "build",
+            "problemMatcher": []
+        },
+            {
+                "label": "Run: Verificación DNV (demo yate 30m)",
+                "type": "shell",
+                "command": "source .venv/bin/activate && export PYTHONPATH=\"$(pwd)/herramientas\" && python \"./herramientas/maxsurf_integration/dnv_verification/verificador_completo.py\" && open \"./salidas/dnv/reporte_dnv_yate_30m.pdf\"",
+                "group": "build",
+                "problemMatcher": []
+            },
+                {
+                    "label": "Run: AutoCAD (DXF offline demo)",
+                    "type": "shell",
+                    "command": "source .venv/bin/activate && export PYTHONPATH=\"$(pwd)/herramientas\" && python -m maxsurf_integration autocad construction --L 12 --B 3.8 --T 1.8 --out \"./salidas/autocad\" && open \"./salidas/autocad\"",
+                    "group": "build",
+                    "problemMatcher": []
+                },
+                {
+                    "label": "Run: AutoCAD (Plano de Líneas)",
+                    "type": "shell",
+                    "command": "source .venv/bin/activate && export PYTHONPATH=\"$(pwd)/herramientas\" && python -m maxsurf_integration autocad lines --L 12 --B 3.8 --T 1.8 --out \"./salidas/autocad\" && open \"./salidas/autocad\"",
+                    "group": "build",
+                    "problemMatcher": []
+                },
+                {
+                    "label": "Run: AutoCAD (Cuadernas)",
+                    "type": "shell",
+                    "command": "source .venv/bin/activate && export PYTHONPATH=\"$(pwd)/herramientas\" && python -m maxsurf_integration autocad frames --L 12 --B 3.8 --T 1.8 --out \"./salidas/autocad\" && open \"./salidas/autocad\"",
+                    "group": "build",
+                    "problemMatcher": []
+                },
+                {
+                    "label": "Run: AutoCAD (Todos)",
+                    "type": "shell",
+                    "command": "source .venv/bin/activate && export PYTHONPATH=\"$(pwd)/herramientas\" && python -m maxsurf_integration autocad all --L 12 --B 3.8 --T 1.8 --out \"./salidas/autocad\" && open \"./salidas/autocad\"",
+                    "group": "build",
+                    "problemMatcher": []
+                },
+        {
+            "label": "Run: Grid Optimization",
+            "type": "shell",
+            "command": "source .venv/bin/activate && export PYTHONPATH=\"$(pwd)/herramientas\" && python -m maxsurf_integration grid-opt --L 95 100 --B 14 16 --T 5 6 --Cb 0.55 0.65 --out \"./salidas/optimization\" --basename \"task_grid\" && open \"./salidas/optimization/task_grid.pdf\"",
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "Test: All (package)",
+            "type": "shell",
+            "command": "source .venv/bin/activate && export PYTHONPATH=\"$(pwd)/herramientas\" && pytest -q ./herramientas/maxsurf_integration/tests",
+            "group": "test",
+            "problemMatcher": ["$python"]
+        },
+        {
+            "label": "Test: Conectar con Maxsurf",
+            "type": "shell",
+            "command": "source .venv/bin/activate && export PYTHONPATH=\"$(pwd)/herramientas\" && python -m maxsurf_integration ping",
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "clear": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Instalar Dependencias Maxsurf",
+            "type": "shell",
+            "command": "source .venv/bin/activate && pip install -r ${workspaceFolder}/herramientas/maxsurf_integration/requirements.txt",
+            "group": "build",
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": []
+        }
+    ]
+}

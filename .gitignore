@@ -1,0 +1,9 @@
+# Entorno local
+.venv/
+.pytest_cache/
+__pycache__/
+.DS_Store
+
+# Salidas temporales de herramientas
+salidas/**/__pycache__/
+*.pyc

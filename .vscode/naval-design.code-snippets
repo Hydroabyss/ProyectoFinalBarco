@@ -1,0 +1,158 @@
+{
+    "Maxsurf Connect": {
+        "prefix": "maxconnect",
+        "body": [
+            "from herramientas.maxsurf_integration import MaxsurfConnector",
+            "",
+            "with MaxsurfConnector(visible=True) as maxsurf:",
+            "    if maxsurf.is_connected():",
+            "        ${1:# Tu código aquí}",
+            "        pass",
+            "    else:",
+            "        print('❌ No se pudo conectar con Maxsurf')"
+        ],
+        "description": "Conectar con Maxsurf usando context manager"
+    },
+    "Hull Designer Setup": {
+        "prefix": "hullsetup",
+        "body": [
+            "from herramientas.maxsurf_integration import MaxsurfConnector, HullDesigner",
+            "",
+            "with MaxsurfConnector(visible=True) as maxsurf:",
+            "    designer = HullDesigner(maxsurf)",
+            "    ",
+            "    # Crear casco del Buque 9",
+            "    designer.crear_casco_buque9()",
+            "    ",
+            "    # O crear casco paramétrico",
+            "    # designer.crear_casco_parametrico(",
+            "    #     loa=${1:100.0},",
+            "    #     beam=${2:15.0},",
+            "    #     draft=${3:6.0},",
+            "    #     cb=${4:0.65}",
+            "    # )"
+        ],
+        "description": "Configurar diseñador de cascos"
+    },
+    "Stability Analysis": {
+        "prefix": "stabanalysis",
+        "body": [
+            "from herramientas.maxsurf_integration import MaxsurfConnector, StabilityAnalyzer",
+            "",
+            "with MaxsurfConnector(visible=True) as maxsurf:",
+            "    analyzer = StabilityAnalyzer(maxsurf)",
+            "    ",
+            "    # Análisis completo",
+            "    resultados = analyzer.analisis_completo_buque9()",
+            "    ",
+            "    # Generar reporte",
+            "    reporte = analyzer.generar_reporte_estabilidad()",
+            "    print(reporte)",
+            "    ",
+            "    # Exportar resultados",
+            "    analyzer.exportar_resultados('${1:estabilidad_buque9.json}')"
+        ],
+        "description": "Análisis de estabilidad completo"
+    },
+    "Tank Designer": {
+        "prefix": "tankdesign",
+        "body": [
+            "from herramientas.maxsurf_integration import MaxsurfConnector, TankDesigner",
+            "",
+            "with MaxsurfConnector(visible=True) as maxsurf:",
+            "    designer = TankDesigner(maxsurf)",
+            "    ",
+            "    # Diseñar tanques para Buque 9",
+            "    tanques = designer.diseñar_tanques_buque9(",
+            "        escenario_consumo='${1|economico,realista,pesado|}'",
+            "    )",
+            "    ",
+            "    # Crear tanques en Maxsurf",
+            "    designer.crear_tanques_en_maxsurf()",
+            "    ",
+            "    # Exportar diseño",
+            "    designer.exportar_tanques('${2:tanques_buque9.csv}')"
+        ],
+        "description": "Diseño de tanques"
+    },
+    "Calculate Hydrostatics": {
+        "prefix": "hydro",
+        "body": [
+            "# Calcular parámetros hidrostáticos",
+            "def calcular_hidrostaticas(calados=[0.5, 1.0, 1.5, 2.0]):",
+            "    resultados = []",
+            "    ",
+            "    for calado in calados:",
+            "        maxsurf.execute_command(f'SET DRAFT {calado}')",
+            "        maxsurf.execute_command('HYDROSTATICS')",
+            "        ",
+            "        # Obtener resultados",
+            "        resultado = {",
+            "            'calado': calado,",
+            "            'desplazamiento': ${1:0.0},  # Obtener de Maxsurf",
+            "            'cb': ${2:0.0},",
+            "            'lcb': ${3:0.0}",
+            "        }",
+            "        resultados.append(resultado)",
+            "    ",
+            "    return pd.DataFrame(resultados)"
+        ],
+        "description": "Calcular parámetros hidrostáticos"
+    },
+    "GZ Curve": {
+        "prefix": "gzcurve",
+        "body": [
+            "# Calcular curva de brazos adrizantes (GZ)",
+            "def curva_gz(angulos=[0, 15, 30, 45, 60, 75, 90]):",
+            "    brazos = []",
+            "    ",
+            "    for angulo in angulos:",
+            "        maxsurf.execute_command(f'STABILITY ANGLE {angulo}')",
+            "        ",
+            "        gz = ${1:0.0}  # Obtener de Maxsurf",
+            "        ",
+            "        brazos.append({",
+            "            'angulo_deg': angulo,",
+            "            'angulo_rad': angulo * 3.14159 / 180,",
+            "            'GZ_m': gz",
+            "        })",
+            "    ",
+            "    return pd.DataFrame(brazos)"
+        ],
+        "description": "Calcular curva GZ"
+    },
+    "Buque 9 Parameters": {
+        "prefix": "buque9",
+        "body": [
+            "# Parámetros del Buque 9",
+            "BUQUE9 = {",
+            "    'LOA': 97.7,          # Eslora total (m)",
+            "    'Lpp': 96.2,          # Eslora entre perpendiculares (m)",
+            "    'beam': 14.3,         # Manga (m)",
+            "    'draft': 5.8,         # Calado de proyecto (m)",
+            "    'depth': 6.7,         # Puntal (m)",
+            "    'DWT': 3848,          # Peso muerto (t)",
+            "    'Cb': 0.703,          # Coeficiente de bloque",
+            "    'Cp': 0.721,          # Coeficiente prismático",
+            "    'velocidad': 14,      # Velocidad (kn)",
+            "    'autonomia': 10000,   # Autonomía (nm)",
+            "    'tipo': 'Granelero'",
+            "}"
+        ],
+        "description": "Parámetros del Buque 9"
+    },
+    "Logger Setup": {
+        "prefix": "logsetup",
+        "body": [
+            "import logging",
+            "",
+            "# Configurar logging",
+            "logging.basicConfig(",
+            "    level=logging.${1|DEBUG,INFO,WARNING,ERROR|},",
+            "    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'",
+            ")",
+            "logger = logging.getLogger(__name__)"
+        ],
+        "description": "Configurar logging"
+    }
+}

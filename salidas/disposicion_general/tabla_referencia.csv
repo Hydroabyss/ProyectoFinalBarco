@@ -1,0 +1,9 @@
+campo,valor,unidad,fuente,fecha
+eslora_total_m,107.0,m,Excel:Cálculos,2025-11-06
+eslora_entre_perpendiculares_m,105.2,m,Excel:Cálculos,2025-11-06
+manga_m,15.99,m,Excel:Cálculos,2025-11-06
+puntal_m,7.9,m,Excel:Cálculos,2025-11-06
+calado_m,6.2,m,Excel:Cálculos,2025-11-06
+coeficiente_de_bloque,0.7252,-,Maxsurf (recalculado),2025-11-06
+coeficiente_prismatico,0.74,-,Maxsurf (recalculado),2025-11-06
+coeficiente_de_seccion_media,0.98,-,Excel:Cálculos,2025-11-06

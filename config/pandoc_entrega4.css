@@ -1,0 +1,48 @@
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+  color: #0f172a;
+  margin: 2.5rem;
+}
+
+h1, h2, h3, h4 {
+  color: #0b274a;
+  margin-top: 1.8rem;
+  margin-bottom: 0.6rem;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #d6dde6;
+  margin: 2rem 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+}
+
+th, td {
+  border: 1px solid #d6dde6;
+  padding: 0.5rem 0.75rem;
+}
+
+th {
+  background: #f4f7fb;
+  text-align: left;
+  font-weight: 600;
+}
+
+code, pre {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+blockquote {
+  border-left: 4px solid #d6dde6;
+  padding-left: 0.9rem;
+  color: #334155;
+  margin: 1rem 0;
+}

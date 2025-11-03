@@ -1,0 +1,2624 @@
+
+--- Página 1 ---
+ 
+ 
+ 
+ 
+0 
+
+--- Página 2 ---
+Contenido 
+Pregunta A......................................................................................................................2 
+Pregunta B......................................................................................................................6 
+Pregunta C......................................................................................................................8 
+Pregunta D....................................................................................................................13 
+Pregunta E....................................................................................................................14 
+Anexos..........................................................................................................................16 
+Conclusiones............................................................................................................... 28 
+ 
+1 
+
+--- Página 3 ---
+ 
+Problema 3. Disposición general.  
+ 
+Nota: El resultado de este problema debe mostrarse en un plano 2D que incluya al menos una 
+vista de alzado, planta y sección maestra del barco. Asimismo, debe generarse un modelo en 
+Maxsurf stability en el que se definan y cubiquen los diferentes espacios.  
+Pregunta A 
+Determinar la posición de los mamparos de proa y popa de cámara de máquinas y de 
+pique de proa.  
+ 
+Nota: La clara de cuadernas será de 700 mm en la zona central y 600 mm a popa del 
+mamparo de proa de cámara de máquinas y a proa del pique de proa.  
+ 
+Para determinar la posición precisa de los mamparos, es necesario consultar las secciones 
+correspondientes de la normativa emitida por el DNV y SOLAS. Una vez lo hayamos 
+consultado procedemos con los cálculos específicos. En esta sección se detallarán los 
+procedimientos a seguir. 
+Inicialmente, es necesario adquirir los datos relativos a la embarcación obtenidos en la fase 
+previa del trabajo. Hay que remarcar que la longitud de flotación se ha ajustado a 105,2 m. 
+ 
+Resumen técnico con supuestos de referencia 
+ 
+ 
+CATEGORÍA 
+ELEMENTO 
+DIMENSIÓN 
+VALOR 
+UNID
+AD 
+NORMATIVA 
+DIMENSIONES 
+PRINCIPALES 
+Eslora entre 
+perpendiculares 
+Lpp 
+105.2 
+m 
+Medido 
+Manga 
+B 
+15.99 
+m 
+Medido 
+Puntal 
+D 
+7.9 
+m 
+Medido 
+Calado de diseño 
+T 
+6.2 
+m 
+Medido 
+Francobordo 
+FB 
+1.7 
+m 
+Calculado (D - T) 
+Desplazamiento 
+Δ 
+7752.9 
+ton 
+Hidrostático 
+(CB=0.7252) 
+ 
+ 
+ 
+ 
+ 
+ 
+COMPARTIMENTACIÓN 
+Altura doble fondo 
+hDB 
+1.2 
+m 
+DNV Pt.3 Ch.2 
+Sec.3 
+Altura mínima DNV 
+hDB_min 
+0.80 
+m 
+B/20 = 15.99/20 
+Ancho costado doble 
+w_DS 
+1.80 
+m 
+SOLAS II-1 
+Reg.13 
+Manga interior 
+B_inner 
+12.39 
+m 
+B - 2×w_DS 
+Espaciamiento cuadernas 
+s 
+0.70 
+m 
+DNV Pt.3 Ch.3 
+ 
+ 
+ 
+ 
+ 
+ 
+ESPESORES DE CHAPAS 
+Forro de fondo exterior 
+t_bottom 
+22 
+mm 
+DNV Pt.3 Ch.6 
+Forro de costado 
+t_side 
+20 
+mm 
+DNV Pt.3 Ch.6 
+Fondo interior 
+t_inner_bottom 
+14 
+mm 
+DNV Pt.3 Ch.6 
+Mamparo longitudinal 
+t_inner_side 
+12 
+mm 
+DNV Pt.3 Ch.6 
+Cubierta principal 
+t_deck 
+12 
+mm 
+DNV Pt.3 Ch.6 
+Cubierta (zona escotilla) 
+t_deck_hatch 
+16 
+mm 
+DNV Pt.3 Ch.6 
+ 
+ 
+ 
+ 
+ 
+ 
+PERFILES 
+ESTRUCTURALES 
+Altura varengas 
+h_floor 
+400 
+mm 
+DNV Pt.3 Ch.3 
+Alma varenga 
+tw_floor 
+12 
+mm 
+DNV Pt.3 Ch.3 
+Ala varenga 
+bf_floor × tf 
+150×20 
+mm 
+DNV Pt.3 Ch.3 
+Altura cuadernas 
+h_frame 
+300 
+mm 
+DNV Pt.3 Ch.3 
+Alma cuaderna 
+tw_frame 
+10 
+mm 
+DNV Pt.3 Ch.3 
+Ala cuaderna 
+bf_frame × tf 
+120×16 
+mm 
+DNV Pt.3 Ch.3 
+Altura baos cubierta 
+h_beam 
+250 
+mm 
+DNV Pt.3 Ch.3 
+Alma bao 
+tw_beam 
+10 
+mm 
+DNV Pt.3 Ch.3 
+2 
+
+--- Página 4 ---
+Ala bao 
+bf_beam × tf 
+100×14 
+mm 
+DNV Pt.3 Ch.3 
+Altura longitudinales 
+h_long 
+200 
+mm 
+DNV Pt.3 Ch.3 
+Alma longitudinal 
+tw_long 
+8 
+mm 
+DNV Pt.3 Ch.3 
+ 
+ 
+ 
+ 
+ 
+ 
+MATERIAL 
+Grado de acero 
+- 
+AH36 
+- 
+DNV 
+Límite elástico 
+σy 
+355 
+MPa 
+DNV 
+ 
+ 
+ 
+ 
+ 
+ 
+UBICACIÓN 
+Posición cuaderna maestra 
+x_MF 
+52.6 
+m 
+Lpp/2 desde proa 
+Tabla 1.Descripción general del modelo: 
+Según la normativa “DNV-RU-SHIP Pt.3 Ch.2 General arrangement design - Sección 2”. Todo buque debe disponer, como 
+mínimo :  
+●​
+Mamparo de colisión 
+●​
+Mamparo en popa  
+●​
+Mamparo en cada extremo de la sala de máquinas 
+Además de determinar el número y la ubicación de los mamparos, su diseño debe cumplir las exigencias de resistencia 
+transversal, subdivisión, capacidad de inundación y estabilidad frente a daños, conforme a la normativa nacional. 
+También, dentro del apartado mencionado antes, en el punto “1.1.4” se establece que, para las embarcaciones en las que no 
+se hayan hecho cálculos de estabilidad en caso de avería, el número total de mamparos estancos transversales no puede ser 
+menor que el valor indicado en la tabla que se muestra a continuación. 
+ 
+En el buque en cuestión se sabe que la eslora de flotación es de 105,2 ,  así que existe una eslora comprendida entre los 
+valores 85 < L ≤ 125. Esto indica que existirá un valor mínimo de mamparos transversales de 4 en popa y en cualquier otra 
+parte de 5. 
+Para la distribución de cuadernas en nuestro buque, hemos establecido un espaciamiento de 700 mm en la zona central, 600 
+mm a popa de la cámara de máquinas y 600 mm a proa del mamparo de colisión. 
+En primer lugar, consultaremos la normativa de DNV, ya que todos los buques deben llevar un mamparo de colisión que 
+alcance la cubierta del mamparo. Por ello, acudimos al apartado “Ships – Parte 3 – Capítulo 2 (General arrangement)”. La 
+distancia xcx_cxc​, en metros, medida desde la perpendicular FPLL hasta el mamparo de colisión, deberá adoptarse dentro de 
+los límites siguientes: 
+ 
+ 
+ 
+ 
+3 
+
+--- Página 5 ---
+ 
+Formulas calculo distancias minimas y maximas  
+Con tal de calcular dichas distancias es importante saber qué es xf, que se especifica según la normativa de la siguiente 
+manera:  
+ 
+Formula calculo Xf 
+Se calcula el coeficiente Xf, según el valor mínimo que establece la normativa, 0,795. Una vez determinado este valor, es 
+necesario determinar las posiciones máximas y mínimas desde la perpendicular de proa, Xc máximo y Xc mínimo. 
+ 
+nombre 
+inicio_m 
+fin_m 
+uso 
+Pique de popa 
+0.0 
+8.2 
+Timón, ejes y tanque de lastre. 
+Cámara de máquinas 
+8.2 
+23.2 
+Motor principal, auxiliares, cuadro eléctrico. 
+Bodega 3 
+23.2 
+45.2 
+Carga y pañoles de servicio. 
+Bodega 2 
+45.2 
+72.2 
+Carga general central. 
+Bodega 1 
+72.2 
+99.2 
+Carga general / contenedores. 
+Pique de proa 
+99.2 
+105.2 
+Lastre, cadena y pañoles de amarras. 
+ Tabla 2. Posiciones de mamparos transversales principales. 
+ 
+ 
+La cámara de máquinas queda entre las cuadernas 34 y 13, equivalentes a 23,20–8,50 m 
+medidos desde la PP de popa (82,00–96,70 m respecto a proa). Se verifica la presencia de 
+piques de proa y popa conforme a DNV Pt.3 Ch.1 Sec.2 [3.1], que exige compartimiento 
+estanco antes y después del espacio de máquinas en buques > 100 m. 
+4 
+
+--- Página 6 ---
+ 
+Cabe remarcar que las distancias calculadas anteriormente coinciden con las distancias que 
+se determinan a partir de la normativa expresada en el documento de clase. Esta normativa 
+es la siguiente: 
+ 
+ 
+ Nuestra Distribución:  
+  
+ 
+nombre 
+inicio_m 
+fin_m 
+uso 
+Pique de popa 
+0.0 
+8.2 
+Timón, ejes y tanque de lastre. 
+Cámara de máquinas 8.2 
+23.2 
+Motor principal, auxiliares, cuadro eléctrico. 
+Bodega 3 
+23.2 
+45.2 
+Carga y pañoles de servicio. 
+Bodega 2 
+45.2 
+72.2 
+Carga general central. 
+Bodega 1 
+72.2 
+99.2 
+Carga general / contenedores. 
+Pique de proa 
+99.2 
+105.2 
+Lastre, cadena y pañoles de amarras. 
+Tabla 3. Distribución longitudinal de espacios principales 
+ 
+ 
+Figura 1. Distribución longitudinal de espacios en Lpp con identificación de mamparos.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+5 
+
+--- Página 7 ---
+Pregunta B 
+Disponer en el plano de disposición los elementos delimitadores (doble fondo, doble casco, 
+cubiertas, mamparos) e indicar motor y tanques. 
+ 
+Dado que el doble fondo de cámara de máquinas y el doble fondo del resto del buque no están situados a la misma altura, es 
+necesario colocar una rampa que una las dos plataformas. Esta rampa se situará justo al lado de la sala de máquinas. 
+ 
+Figura 2. Plano longitudinal del doble fondo del buque 
+ 
+El doble fondo continuo de 1,80 m cumple DNV Pt.3 Ch.2 Sec.2 [1.4]. 
+ 
+ 
+ 
+Figura 3 Doble casco 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Cuaderna maestra  
+6 
+
+--- Página 8 ---
+ 
+ 
+ 
+Lpp: 105.200 m | Manga: 15.99 m | Puntal: 7.90 m | Calado: 6.20 m 
+Desplazamiento: 7752.9 t 
+Configuración estructural: 
+- Doble fondo: 1.20 m (DNV Pt.3 Ch.2 Sec.3) 
+- Doble costado: 1.80 m (SOLAS II-1 Reg.13) 
+- 2ª cubierta: cota 5.20 m (hipótesis validada con equipo) 
+- Cubierta principal: cota 7.90 m 
+Elementos incluidos en el plano: 
+- Línea base, quilla y eje CL 
+- Doble fondo con varengas representativas 
+- Doble costado y longitudinales 
+- Cubiertas principal y secundaria 
+- Tanques de doble fondo y de ala 
+- Mamparos transversales y longitudinales 
+- Leyenda normativa y especificación de material AH36 
+Referencias normativas: DNV Pt.3 Ch.2-3, DNV Pt.3 Ch.5, SOLAS II-1 Reg.13 
+ 
+ 
+ 
+Figura 5. Cuaderna mestra. 
+7 
+
+--- Página 9 ---
+ 
+Pregunta C 
+Estimar el volumen de los principales tanques de consumo, disponerlos y cubicarlos en 
+Maxsurf Stability. 
+ 
+ 
+Tabla 4. Dimensionamiento de tanques de combustible y lastre 
+ 
+A continuación, se especifica como se ha calculado cada uno de los tanques 
+correspondientes: 
+ 
+●​ Volumen del tanque de servicio diario 
+ 
+​
+El tanque de servicio diario se dimensiona para almacenar el combustible 
+necesario para 8 horas de operación continua del motor principal, incorporando un 
+10% de margen por contingencias. Se calcula con: 
+ 
+Deberemos disponer de 2 tanques de servicio diario para mantener la estabilidad del 
+buque, 
+así que el volumen total de los tanques de combustible de uso diario será la mitad, es 
+decir, 2,3m3 
+ 
+ 
+●​ Volumen del tanque de sedimentación 
+ 
+8 
+Nombre 
+Servicio 
+Longitud 
+(m) 
+Volumen 
+(m³) 
+Porcentaje 
+del total 
+(%) 
+Notas 
+altura_media
+_m 
+ancho_efe
+ctivo_m 
+factor_utiliz
+acion 
+DB Proa 
+Lastre de 
+ajuste y 
+reserva FO 
+27,00 
+269,9 
+23,7 
+Factor de llenado del 
+92% 
+para 
+compensar 
+refuerzos y tuberías. 
+0.7995 
+13.591 
+0.92 
+DB Centro 
+Combustible 
+pesado / lastre 
+27,00 
+269,9 
+23,7 
+Factor de llenado del 
+92% 
+para 
+compensar 
+refuerzos y tuberías. 
+0.7995 
+13.591 
+0.92 
+DB Aft 
+Combustible y 
+lastre 
+22,00 
+219,9 
+19,3 
+Factor de llenado del 
+92% 
+para 
+compensar 
+refuerzos y tuberías. 
+0.7995 
+13.591 
+0.92 
+DB Máquina 
+Servicio 
+motor 
+principal 
+15,00 
+150,0 
+13,1 
+Factor de llenado del 
+92% 
+para 
+compensar 
+refuerzos y tuberías. 
+0.7995 
+13.591 
+0.92 
+Wing tank 
+babor 
+Fuel oil 
+alimentación 
+12,00 
+113,3 
+9,9 
+Sección triangular; factor 
+0.88 por refuerzos. 
+6.1005 
+3.517 
+0.88 
+Wing tank 
+estribor 
+Fuel oil 
+alimentación 
+12,00 
+113,3 
+9,9 
+Simétrico 
+al tanque de 
+babor. 
+6.1005 
+3.517 
+0.88 
+Day tank 
+Suministro 
+diario motor 
+principal 
+2,00 
+4,6 
+0,4 
+Tanque cilíndrico vertical 
+dentro de la cámara de 
+máquinas. 
+3.0 
+1.4 
+0.95 
+
+--- Página 10 ---
+Según la norma, el tanque de sedimentación se dimensiona para el consumo de 24 h 
+del motor principal con un 15% adicional. Se calcula con: 
+ 
+Sera:  
+V=28227,07 / 900 ​=31,36 m3 
+ 
+ 
+●​ Volumen del tanque almacén 
+El tanque de almacenamiento se dimensiona con el volumen total de combustible 
+requerido a bordo, descontando el volumen ya reservado en el tanque de 
+sedimentación. La relación usada es: 
+ 
+ 
+Figura 6. Capacidades útiles individuales de los tanques dimensionados. 
+9 
+
+--- Página 11 ---
+ 
+ 
+ 
+Figura 7. Balance disponible vs. requerido para la autonomía especificada. 
+ 
+Figura 11. Dimensionamiento de tanques de combustible y lastre. 
+ 
+ 
+ 
+La autonomía objetivo de 30 días, con un consumo de 30,61 t/día (ver tabla de consumo), exige 
+1020,4 m³ de combustible. Los tanques dimensionados aportan 1141,0 m³ y generan un margen 
+operativo del 11,8% sobre lo requerido (ver balance de combustible). La relación de 
+dimensionamiento según DNV Pt.4 Ch.6 Sec.3 se aplica: 0,92 en doble fondo y 0,88 en tanques 
+de ala. 
+  
+El detalle diario por subsistema (ver Tabla 6) distribuye el consumo en 84,43% para el motor 
+principal 16V26, 13,36% para generadores auxiliares y 2,21% para servicios y pérdidas, todos 
+convertidos con densidad 0,90 t/m³. 
+  
+10 
+
+--- Página 12 ---
+Una vez calculados los tanques de combustible, es necesario calcular el volumen de agua dulce. 
+Para ello, se debe partir de la tabla A.1 de la norma ISO 15748-2. 
+ 
+ 
+Tabla 5. Tabla A.1 de la norma ISO 15748-2 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figura 8 Disposición longitudinal de los tanques de alimentación del motor 
+ 
+ 
+ 
+11 
+
+--- Página 13 ---
+ 
+Figura 9 Disposición en planta de los tanques de alimentación del motor 
+ 
+ 
+Figura 10 Disposición transversal de los tanques de alimentaci 
+12 
+
+--- Página 14 ---
+ 
+ 
+ 
+13 
+
+--- Página 15 ---
+ 
+La autonomía objetivo de 12 días, con un consumo de 5,00 t/día, exige 70,6 m³ de combustible. Los tanques 
+dimensionados aportan 1085,1 m³ y generan un margen operativo del 1437,2% sobre lo requerido.  
+ 
+ 
+Pregunta D 
+Completar el modelo Maxsurf Stability insertando los espacios definidos. 
+ 
+Se recomienda actualizar el modelo `salidas/base_ship/datos_buque_base.json` con las subdivisiones anteriores. 
+Cada espacio puede implementarse como compartment en Maxsurf, reutilizando la cuaderna maestra del plano 
+DXF `salidas/autocad_base/plano_cuadernas.dxf`. Según DNV Pt.3 Ch.3 Sec.3 [1.5], los compartimentos deben 
+registrarse con sus volúmenes y centroides para la evaluación hidrostática. 
+ 
+ 
+ 
+Figura 12. Planta totaMaxsurf 
+ 
+ 
+Figura 13. Plano de planta de los tanques de consumo Maxsurf 
+ 
+ 
+14 
+
+--- Página 16 ---
+ 
+Figura 14. Vista isométrica de la disposición de los compartimentos y tanques Maxsurf 
+ 
+ 
+ 
+ 
+Pregunta E.  
+Verificar si la capacidad de tanques de carga cumple las especificaciones. 
+El proyecto tenía una especificación de 5000m3 de carga y nuestro buque tiene un volumen disponible de 5472 m3, 
+por lo tanto cumple con las especificaciones.  
+A continuación se especifica el volumen por bodega.  
+ 
+ 
+Bodega 
+Largo (m) 
+Volumen útil (m³) 
+Referencia 
+Bodega 1 
+27,00 
+1944 
+DNV Pt.3 Ch.1 Sec.6 [4] 
+Bodega 2 
+27,00 
+1944 
+DNV Pt.3 Ch.1 Sec.6 [4] 
+Bodega 3 
+22,00 
+1584 
+DNV Pt.3 Ch.1 Sec.6 [4] 
+Total 
+- 
+5472 
+ 
+ 
+Tabla 6. Capacidad útil de bodegas de carga frente al requerimiento del proyecto 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+15 
+
+--- Página 17 ---
+ 
+ 
+Figura 15.  Capacidad disponible por bodega y comparación con la especificación. 
+ 
+ 
+ 
+ 
+ 
+Tabla 7. Capacidad útil de bodegas de carga frente al requerimiento del proyecto. 
+ 
+ 
+ 
+ 
+Figura 16. Curva de brazos de estabilidad GZ prevista.                              Figura 17. Body plan sintético empleado para la validación en Maxsurf. 
+ 
+16 
+
+--- Página 18 ---
+ 
+ 
+Figura 18. Perfil lateral con sheer y quilla utilizados en el modelo. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+17 
+
+--- Página 19 ---
+Anexos  
+ 
+DNV Pt.3 Ch.2 Sec.2 [1.1.1-1.1.6]​
+SECCIÓN 2 — ARREGLO DE SUBDIVISIONES 
+1.​ ARREGLO DE MAMPAROS ESTANCOS​
+1.1 NÚMERO Y DISPOSICIÓN DE MAMPAROS ESTANCOS 
+1.1.1 Todos los buques deberán contar al menos con los siguientes mamparos estancos transversales: 
+​
+a) un mamparo de colisión 
+​
+b) un mamparo del pique de popa 
+​
+c) un mamparo en cada extremo de la cámara de máquinas. 
+ 
+1.1.2 En los buques con planta propulsora eléctrica, tanto la sala de generadores como la cámara de máquinas 
+deberán quedar confinadas por mamparos estancos. 
+1.1.3 Además de los requisitos [1.1.1] y [1.1.2], el número y la disposición de mamparos se ajustarán a las 
+necesidades de resistencia transversal, subdivisión, inundabilidad y estabilidad en avería, cumpliendo las exigencias 
+de la normativa nacional aplicable. 
+1.1.4 Cuando no se disponga de cálculos de estabilidad en avería, el número total de mamparos estancos 
+transversales no será inferior al indicado en la Tabla 1. 
+1.1.5 Los mamparos estancos deberán llegar hasta la cubierta de mamparos. 
+1.1.6 En los buques con una cubierta continua por debajo de la cubierta de francobordo, y cuando el calado sea 
+menor que la distancia a esa segunda cubierta, todos los mamparos salvo el de colisión podrán terminar en la 
+segunda cubierta. En tal caso, el cerramiento de la cámara de máquinas entre la segunda cubierta y la cubierta de 
+mamparos deberá ser estanco, y la segunda cubierta deberá ser estanca fuera del cerramiento sobre la cámara de 
+máquinas. 
+ 
+ 
+ 
+DNV Pt.3 Ch.2 Sec.3 [2.2-3.1] 
+2.2 EXTENSIÓN DEL DOBLE FONDO 
+​
+En los buques de pasaje y en los buques de carga distintos de petroleros se instalará un doble fondo que se extienda, 
+en la medida en que sea practicable y compatible con el diseño y correcto funcionamiento del buque, desde el 
+mamparo de colisión hasta el mamparo del pique de popa. 
+ 
+2.3 ALTURA DEL DOBLE FONDO 
+​
+Cuando se exija un doble fondo, el forro interior se prolongará hasta el costado del buque de forma que proteja el 
+forro exterior hasta la roda de balance. Se considerará adecuada la protección si el forro interior no queda en ningún 
+punto por debajo de un plano paralelo a la línea de quilla situado a una distancia vertical hDB medida desde la línea 
+de quilla, en milímetros, calculada mediante la fórmula: hDB = 1000 · B/20, con un mínimo de 760 mm. La altura 
+hDB no será superior a 2000 mm y deberá permitir un acceso cómodo a todas las partes del doble fondo. En los 
+buques con gran levantamiento del pantoque, la altura mínima podrá incrementarse tras una consideración 
+específica. 
+ 
+2.4 POZOS PEQUEÑOS EN EL DOBLE FONDO 
+​
+Los pozos pequeños construidos en el doble fondo para el drenaje de las bodegas no excederán en profundidad de 
+lo estrictamente necesario. En los buques con eslora LLL igual o superior a 80 m, la distancia vertical entre el fondo 
+del pozo y un plano coincidente con la línea de quilla no será inferior a 500 mm ni a la mitad de la altura requerida 
+18 
+
+--- Página 20 ---
+del doble fondo. Podrán aceptarse otros pozos, como los destinados al aceite lubricante bajo los motores 
+principales, si proporcionan una protección equivalente a la de un doble fondo que cumpla este reglamento. 
+ 
+3.1 GENERALIDADES 
+​
+El pique de proa y los compartimentos situados por delante del mamparo de colisión no se destinarán al transporte 
+de combustible ni de otros productos inflamables. 
+ 
+SOLAS 1974 Cap. II-1 Regla 26 (Generalidades)​
+REGLA 26 — GENERALIDADES 
+ 
+1.​ Las máquinas, las calderas y otros recipientes a presión, así como los correspondientes sistemas de tuberías 
+y accesorios, responderán a un proyecto y a una construcción adecuados para el servicio a que estén 
+destinados e irán instalados y protegidos de modo que se reduzca al mínimo todo peligro para las personas 
+que pueda haber a bordo, considerándose en este sentido como proceda las piezas móviles, las superficies 
+calientes y otros riesgos. En el proyecto se tendrán en cuenta los materiales de construcción​
+utilizados, los fines a que el equipo está destinado, las condiciones de trabajo a que habrá de estar sometido 
+y las condiciones ambientales de a bordo. 
+ 
+2.​ La Administración prestará especial atención a la seguridad funcional de los elementos esenciales de 
+propulsión montados como componentes únicos y podrá exigir que el buque tenga una fuente independiente 
+de potencia propulsora que le permita alcanzar una velocidad normal de navegación, sobre todo si no se 
+ajusta a una disposición clásica. 
+ 
+3.​ Se proveerán medios que permitan mantener o restablecer el funcionamiento normal de las máquinas 
+propulsoras aun cuando se inutilice una de las máquinas auxiliares esenciales. Se prestará atención especial 
+a los defectos de funcionamiento que puedan darse en: un grupo electrógeno que sirva de fuente de energía 
+eléctrica principal; las fuentes de abastecimiento de vapor; los sistemas proveedores del agua de 
+alimentación de las calderas; los sistemas de alimentación de combustible líquido para calderas o motores; 
+las fuentes de presión del aceite lubricante; las fuentes de presión del agua; una bomba para agua de 
+condensación y los medios destinados a mantener el vacío de los condensadores; los dispositivos mecánicos 
+de abastecimiento de aire para calderas; un compresor y un depósito de aire para fines de arranque o de 
+control; y los medios hidráulicos, neumáticos y eléctricos de mando de las máquinas propulsoras 
+principales, incluidas las hélices de paso variable. No obstante, habida cuenta de las necesarias 
+consideraciones generales de seguridad, la Administración podrá aceptar una reducción parcial en la 
+capacidad propulsora en relación con la necesaria para el funcionamiento normal. 
+ 
+4.​ Se proveerán medios que aseguren que se puede poner en funcionamiento las máquinas sin ayuda exterior 
+partiendo de la condición de buque apagado. 
+ 
+5.​ Todas las calderas, todos los componentes de las máquinas y todos los sistemas de vapor, hidráulicos, 
+neumáticos o de cualquier otra índole, así como los accesorios correspondientes, que hayan de soportar 
+presiones internas, serán sometidos a pruebas adecuadas, entre ellas una de presión, antes de que entren en 
+servicio por primera vez. 
+6.​ Las máquinas propulsoras principales y todas las máquinas auxiliares esenciales a fines de propulsión y 
+seguridad del buque instaladas a bordo responderán a un proyecto tal que puedan funcionar cuando el 
+buque esté adrizado o cuando esté inclinado hacia cualquiera de ambas bandas con ángulos de escora de 
+15° como máximo en estado estático y de 22,5° en estado dinámico (de balance) y, a la vez, con una 
+inclinación dinámica (por cabeceo) de 7,5° a proa o popa. La Administración podrá permitir que varíen 
+estos ángulos teniendo en cuenta el tipo, las dimensiones y las condiciones de servicio del buque. 
+ 
+7.​ Se tomarán las disposiciones oportunas para facilitar la limpieza, la inspección y el mantenimiento de las 
+máquinas principales y auxiliares de propulsión, con inclusión de calderas y recipientes a presión. 
+ 
+19 
+
+--- Página 21 ---
+8.​ Se prestará atención especial al proyecto, la construcción y la instalación de los sistemas de las máquinas 
+propulsoras, de modo que ninguna de las vibraciones que puedan producir sea causa de tensiones excesivas 
+en dichas máquinas en las condiciones de servicio normales. 
+ 
+9.​ Las juntas de dilatación no metálicas de los sistemas de tuberías, si están situadas en un sistema que 
+atraviesa el costado del buque y tanto el punto de penetración como la junta de dilatación no metálica se 
+hallan por debajo de la línea de máxima carga, deberán inspeccionarse en el marco de los reconocimientos 
+prescritos en la Regla I/10 a) y reemplazarse cuando sea necesario o con la frecuencia que recomiende el 
+fabricante. 
+ 
+10.​Las instrucciones de uso y mantenimiento de las máquinas del buque y del equipo esencial para el 
+funcionamiento del buque en condiciones de seguridad, así como los planos de dichas máquinas y equipo, 
+estarán redactados en un idioma comprensible para los oficiales y tripulantes que deban entender dicha 
+información para desempeñar sus tareas. 
+ 
+11.​ Las tuberías de respiración de los tanques de combustible líquido de servicio, los tanques de sedimentación 
+y los tanques de aceite lubricante estarán ubicadas y dispuestas de tal forma que en el caso de que una se 
+rompa ello no entrañe directamente el riesgo de que entre agua de mar o de lluvia. Todo buque nuevo estará 
+provisto de dos tanques de combustible líquido de servicio destinados a cada tipo de combustible utilizado 
+a bordo para la propulsión y los sistemas esenciales, o de medios equivalentes, cuya capacidad mínima de 
+suministro sea de ocho horas para una potencia continua máxima de la planta propulsora y una carga 
+normal de funcionamiento en el mar de la planta electrógena. 
+ 
+ 
+ 
+ 
+SOLAS 1974 Cap. II-1 Regla 13 (fragmento) 
+Regla 13 — Integridad de los mamparos y disposiciones generales 
+ 
+10​
+Se instalarán mamparos estancos hasta la cubierta de cierre de los buques de pasaje y la cubierta de 
+francobordo de los buques de carga que separen a proa y a popa el espacio de máquinas de los espacios de 
+  
+carga y de alojamiento. Habrá asimismo instalado un mamparo del pique de popa que será estanco hasta la cubierta 
+de cierre o la cubierta de francobordo. El mamparo del pique de popa podrá, sin embargo, formar bayoneta por 
+debajo de la cubierta de cierre o la cubierta de francobordo, a condición de que con ello no disminuya el grado de 
+seguridad del buque en lo que respecta al compartimento. 
+11​
+En todos los casos, las bocinas irán encerradas en espacios estancos de volumen reducido. 
+Fórmulas reglamentarias de referencia 
+ 
+ 
+Referencia 
+Expresión 
+DNV Pt.3 Ch.2 Sec.3 
+[2.3] 
+Altura de doble fondo: h_DB = 1000·B/20 (mín. 0,76 m, máx. 2,00 m). 
+DNV Pt.4 Ch.6 Sec.3 
+Dimensionamiento de tanques: V = L·B_ef·H·η (η = 0,92 en doble 
+fondo, η = 0,88 en tanques de ala). 
+ 
+ 
+ 
+subsistema 
+participacion_pc
+t 
+consumo_kg_di
+a 
+consumo_t_di
+a 
+volumen_m3_di
+a 
+consumo_30_dias_
+t 
+volumen_30_dias_m
+3 
+Motor principal 
+16V26 
+84.43 
+25846.2 
+25.846 
+28.72 
+775.39 
+861.5 
+Generadores 
+auxiliares 
+13.36 
+4088.8 
+4.089 
+4.54 
+122.66 
+136.3 
+20 
+
+--- Página 22 ---
+Servicios y 
+pérdidas 
+2.21 
+677.0 
+677 
+0.75 
+20.31 
+22.6 
+Total 
+100.0 
+30612.0 
+30.612 
+34.01 
+918.36 
+1020.4 
+ 
+21 
+
+--- Página 23 ---
+ 
+ 
+posicion_m 
+posicion_desde_proa_m 
+cuaderna 
+tramo_m 
+zona 
+0.0 
+105.2 
+0 
+0.0 
+Pique de popa 
+0.6 
+104.6 
+1 
+0.6 
+Pique de popa 
+1.2 
+104.0 
+2 
+0.6 
+Pique de popa 
+1.8 
+103.4 
+3 
+0.6 
+Pique de popa 
+2.4 
+102.8 
+4 
+0.6 
+Pique de popa 
+3.0 
+102.2 
+5 
+0.6 
+Pique de popa 
+3.6 
+101.6 
+6 
+0.6 
+Pique de popa 
+4.2 
+101.0 
+7 
+0.6 
+Pique de popa 
+4.8 
+100.4 
+8 
+0.6 
+Pique de popa 
+5.4 
+99.8 
+9 
+0.6 
+Pique de popa 
+6.0 
+99.2 
+10 
+0.6 
+Pique de popa 
+6.6 
+98.6 
+11 
+0.6 
+Pique de popa 
+7.2 
+98.0 
+12 
+0.6 
+Pique de popa 
+7.8 
+97.4 
+13 
+0.6 
+Pique de popa 
+8.2 
+97.0 
+14 
+0.4 
+Pique de popa 
+8.9 
+96.3 
+15 
+0.7 
+Cámara de máquinas 
+9.6 
+95.6 
+16 
+0.7 
+Cámara de máquinas 
+10.3 
+94.9 
+17 
+0.7 
+Cámara de máquinas 
+11.0 
+94.2 
+18 
+0.7 
+Cámara de máquinas 
+11.7 
+93.5 
+19 
+0.7 
+Cámara de máquinas 
+12.4 
+92.8 
+20 
+0.7 
+Cámara de máquinas 
+13.1 
+92.1 
+21 
+0.7 
+Cámara de máquinas 
+13.8 
+91.4 
+22 
+0.7 
+Cámara de máquinas 
+14.5 
+90.7 
+23 
+0.7 
+Cámara de máquinas 
+15.2 
+90.0 
+24 
+0.7 
+Cámara de máquinas 
+15.9 
+89.3 
+25 
+0.7 
+Cámara de máquinas 
+16.6 
+88.6 
+26 
+0.7 
+Cámara de máquinas 
+17.3 
+87.9 
+27 
+0.7 
+Cámara de máquinas 
+18.0 
+87.2 
+28 
+0.7 
+Cámara de máquinas 
+22 
+
+--- Página 24 ---
+18.7 
+86.5 
+29 
+0.7 
+Cámara de máquinas 
+19.4 
+85.8 
+30 
+0.7 
+Cámara de máquinas 
+20.1 
+85.1 
+31 
+0.7 
+Cámara de máquinas 
+20.8 
+84.4 
+32 
+0.7 
+Cámara de máquinas 
+21.5 
+83.7 
+33 
+0.7 
+Cámara de máquinas 
+22.2 
+83.0 
+34 
+0.7 
+Cámara de máquinas 
+22.9 
+82.3 
+35 
+0.7 
+Cámara de máquinas 
+23.6 
+81.6 
+36 
+0.7 
+Bodega 3 
+24.3 
+80.9 
+37 
+0.7 
+Bodega 3 
+25.0 
+80.2 
+38 
+0.7 
+Bodega 3 
+25.7 
+79.5 
+39 
+0.7 
+Bodega 3 
+26.4 
+78.8 
+40 
+0.7 
+Bodega 3 
+27.1 
+78.1 
+41 
+0.7 
+Bodega 3 
+27.8 
+77.4 
+42 
+0.7 
+Bodega 3 
+28.5 
+76.7 
+43 
+0.7 
+Bodega 3 
+29.2 
+76.0 
+44 
+0.7 
+Bodega 3 
+29.9 
+75.3 
+45 
+0.7 
+Bodega 3 
+30.6 
+74.6 
+46 
+0.7 
+Bodega 3 
+31.3 
+73.9 
+47 
+0.7 
+Bodega 3 
+32.0 
+73.2 
+48 
+0.7 
+Bodega 3 
+32.7 
+72.5 
+49 
+0.7 
+Bodega 3 
+33.4 
+71.8 
+50 
+0.7 
+Bodega 3 
+34.1 
+71.1 
+51 
+0.7 
+Bodega 3 
+34.8 
+70.4 
+52 
+0.7 
+Bodega 3 
+35.5 
+69.7 
+53 
+0.7 
+Bodega 3 
+36.2 
+69.0 
+54 
+0.7 
+Bodega 3 
+36.9 
+68.3 
+55 
+0.7 
+Bodega 3 
+37.6 
+67.6 
+56 
+0.7 
+Bodega 3 
+38.3 
+66.9 
+57 
+0.7 
+Bodega 3 
+39.0 
+66.2 
+58 
+0.7 
+Bodega 3 
+39.7 
+65.5 
+59 
+0.7 
+Bodega 3 
+40.4 
+64.8 
+60 
+0.7 
+Bodega 3 
+41.1 
+64.1 
+61 
+0.7 
+Bodega 3 
+41.8 
+63.4 
+62 
+0.7 
+Bodega 3 
+42.5 
+62.7 
+63 
+0.7 
+Bodega 3 
+43.2 
+62.0 
+64 
+0.7 
+Bodega 3 
+23 
+
+--- Página 25 ---
+43.9 
+61.3 
+65 
+0.7 
+Bodega 3 
+44.6 
+60.6 
+66 
+0.7 
+Bodega 3 
+45.3 
+59.9 
+67 
+0.7 
+Bodega 3 
+46.0 
+59.2 
+68 
+0.7 
+Bodega 2 
+46.7 
+58.5 
+69 
+0.7 
+Bodega 2 
+47.4 
+57.8 
+70 
+0.7 
+Bodega 2 
+48.1 
+57.1 
+71 
+0.7 
+Bodega 2 
+48.8 
+56.4 
+72 
+0.7 
+Bodega 2 
+49.5 
+55.7 
+73 
+0.7 
+Bodega 2 
+50.2 
+55.0 
+74 
+0.7 
+Bodega 2 
+50.9 
+54.3 
+75 
+0.7 
+Bodega 2 
+51.6 
+53.6 
+76 
+0.7 
+Bodega 2 
+52.3 
+52.9 
+77 
+0.7 
+Bodega 2 
+53.0 
+52.2 
+78 
+0.7 
+Bodega 2 
+53.7 
+51.5 
+79 
+0.7 
+Bodega 2 
+54.4 
+50.8 
+80 
+0.7 
+Bodega 2 
+55.1 
+50.1 
+81 
+0.7 
+Bodega 2 
+55.8 
+49.4 
+82 
+0.7 
+Bodega 2 
+56.5 
+48.7 
+83 
+0.7 
+Bodega 2 
+57.2 
+48.0 
+84 
+0.7 
+Bodega 2 
+57.9 
+47.3 
+85 
+0.7 
+Bodega 2 
+58.6 
+46.6 
+86 
+0.7 
+Bodega 2 
+59.3 
+45.9 
+87 
+0.7 
+Bodega 2 
+60.0 
+45.2 
+88 
+0.7 
+Bodega 2 
+60.7 
+44.5 
+89 
+0.7 
+Bodega 2 
+61.4 
+43.8 
+90 
+0.7 
+Bodega 2 
+62.1 
+43.1 
+91 
+0.7 
+Bodega 2 
+62.8 
+42.4 
+92 
+0.7 
+Bodega 2 
+63.5 
+41.7 
+93 
+0.7 
+Bodega 2 
+64.2 
+41.0 
+94 
+0.7 
+Bodega 2 
+64.9 
+40.3 
+95 
+0.7 
+Bodega 2 
+65.6 
+39.6 
+96 
+0.7 
+Bodega 2 
+66.3 
+38.9 
+97 
+0.7 
+Bodega 2 
+67.0 
+38.2 
+98 
+0.7 
+Bodega 2 
+67.7 
+37.5 
+99 
+0.7 
+Bodega 2 
+68.4 
+36.8 
+100 
+0.7 
+Bodega 2 
+69.1 
+36.1 
+101 
+0.7 
+Bodega 2 
+69.8 
+35.4 
+102 
+0.7 
+Bodega 2 
+70.5 
+34.7 
+103 
+0.7 
+Bodega 2 
+71.2 
+34.0 
+104 
+0.7 
+Bodega 2 
+24 
+
+--- Página 26 ---
+71.9 
+33.3 
+105 
+0.7 
+Bodega 2 
+72.6 
+32.6 
+106 
+0.7 
+Bodega 1 
+73.3 
+31.9 
+107 
+0.7 
+Bodega 1 
+74.0 
+31.2 
+108 
+0.7 
+Bodega 1 
+74.7 
+30.5 
+109 
+0.7 
+Bodega 1 
+75.4 
+29.8 
+110 
+0.7 
+Bodega 1 
+76.1 
+29.1 
+111 
+0.7 
+Bodega 1 
+76.8 
+28.4 
+112 
+0.7 
+Bodega 1 
+77.5 
+27.7 
+113 
+0.7 
+Bodega 1 
+78.2 
+27.0 
+114 
+0.7 
+Bodega 1 
+78.9 
+26.3 
+115 
+0.7 
+Bodega 1 
+79.6 
+25.6 
+116 
+0.7 
+Bodega 1 
+80.3 
+24.9 
+117 
+0.7 
+Bodega 1 
+81.0 
+24.2 
+118 
+0.7 
+Bodega 1 
+81.7 
+23.5 
+119 
+0.7 
+Bodega 1 
+82.4 
+22.8 
+120 
+0.7 
+Bodega 1 
+83.1 
+22.1 
+121 
+0.7 
+Bodega 1 
+83.8 
+21.4 
+122 
+0.7 
+Bodega 1 
+84.5 
+20.7 
+123 
+0.7 
+Bodega 1 
+85.2 
+20.0 
+124 
+0.7 
+Bodega 1 
+85.9 
+19.3 
+125 
+0.7 
+Bodega 1 
+86.6 
+18.6 
+126 
+0.7 
+Bodega 1 
+87.3 
+17.9 
+127 
+0.7 
+Bodega 1 
+88.0 
+17.2 
+128 
+0.7 
+Bodega 1 
+88.7 
+16.5 
+129 
+0.7 
+Bodega 1 
+89.4 
+15.8 
+130 
+0.7 
+Bodega 1 
+90.1 
+15.1 
+131 
+0.7 
+Bodega 1 
+90.8 
+14.4 
+132 
+0.7 
+Bodega 1 
+91.5 
+13.7 
+133 
+0.7 
+Bodega 1 
+92.2 
+13.0 
+134 
+0.7 
+Bodega 1 
+92.9 
+12.3 
+135 
+0.7 
+Bodega 1 
+93.6 
+11.6 
+136 
+0.7 
+Bodega 1 
+94.3 
+10.9 
+137 
+0.7 
+Bodega 1 
+95.0 
+10.2 
+138 
+0.7 
+Bodega 1 
+95.7 
+9.5 
+139 
+0.7 
+Bodega 1 
+96.4 
+8.8 
+140 
+0.7 
+Bodega 1 
+97.1 
+8.1 
+141 
+0.7 
+Bodega 1 
+97.8 
+7.4 
+142 
+0.7 
+Bodega 1 
+98.5 
+6.7 
+143 
+0.7 
+Bodega 1 
+99.2 
+6.0 
+144 
+0.7 
+Bodega 1 
+25 
+
+--- Página 27 ---
+99.8 
+5.4 
+145 
+0.6 
+Pique de proa 
+100.4 
+4.8 
+146 
+0.6 
+Pique de proa 
+101.0 
+4.2 
+147 
+0.6 
+Pique de proa 
+101.6 
+3.6 
+148 
+0.6 
+Pique de proa 
+102.2 
+3.0 
+149 
+0.6 
+Pique de proa 
+102.8 
+2.4 
+150 
+0.6 
+Pique de proa 
+103.4 
+1.8 
+151 
+0.6 
+Pique de proa 
+104.0 
+1.2 
+152 
+0.6 
+Pique de proa 
+104.6 
+0.6 
+153 
+0.6 
+Pique de proa 
+105.2 
+0.0 
+154 
+0.6 
+Pique de proa 
+Tabla 9. Posiciones de las cuadernas. 
+ 
+posicion_m 
+posicion_desde_proa_m 
+cuaderna 
+tramo_m 
+zona 
+0.0 
+105.2 
+0 
+0.0 
+Pique de popa 
+0.6 
+104.6 
+1 
+0.6 
+Pique de popa 
+1.2 
+104.0 
+2 
+0.6 
+Pique de popa 
+1.8 
+103.4 
+3 
+0.6 
+Pique de popa 
+2.4 
+102.8 
+4 
+0.6 
+Pique de popa 
+3.0 
+102.2 
+5 
+0.6 
+Pique de popa 
+3.6 
+101.6 
+6 
+0.6 
+Pique de popa 
+4.2 
+101.0 
+7 
+0.6 
+Pique de popa 
+4.8 
+100.4 
+8 
+0.6 
+Pique de popa 
+5.4 
+99.8 
+9 
+0.6 
+Pique de popa 
+6.0 
+99.2 
+10 
+0.6 
+Pique de popa 
+6.6 
+98.6 
+11 
+0.6 
+Pique de popa 
+7.2 
+98.0 
+12 
+0.6 
+Pique de popa 
+7.8 
+97.4 
+13 
+0.6 
+Pique de popa 
+8.2 
+97.0 
+14 
+0.4 
+Pique de popa 
+8.9 
+96.3 
+15 
+0.7 
+Cámara de máquinas 
+9.6 
+95.6 
+16 
+0.7 
+Cámara de máquinas 
+10.3 
+94.9 
+17 
+0.7 
+Cámara de máquinas 
+11.0 
+94.2 
+18 
+0.7 
+Cámara de máquinas 
+11.7 
+93.5 
+19 
+0.7 
+Cámara de máquinas 
+12.4 
+92.8 
+20 
+0.7 
+Cámara de máquinas 
+13.1 
+92.1 
+21 
+0.7 
+Cámara de máquinas 
+13.8 
+91.4 
+22 
+0.7 
+Cámara de máquinas 
+26 
+
+--- Página 28 ---
+14.5 
+90.7 
+23 
+0.7 
+Cámara de máquinas 
+15.2 
+90.0 
+24 
+0.7 
+Cámara de máquinas 
+15.9 
+89.3 
+25 
+0.7 
+Cámara de máquinas 
+16.6 
+88.6 
+26 
+0.7 
+Cámara de máquinas 
+17.3 
+87.9 
+27 
+0.7 
+Cámara de máquinas 
+18.0 
+87.2 
+28 
+0.7 
+Cámara de máquinas 
+18.7 
+86.5 
+29 
+0.7 
+Cámara de máquinas 
+19.4 
+85.8 
+30 
+0.7 
+Cámara de máquinas 
+20.1 
+85.1 
+31 
+0.7 
+Cámara de máquinas 
+20.8 
+84.4 
+32 
+0.7 
+Cámara de máquinas 
+21.5 
+83.7 
+33 
+0.7 
+Cámara de máquinas 
+22.2 
+83.0 
+34 
+0.7 
+Cámara de máquinas 
+22.9 
+82.3 
+35 
+0.7 
+Cámara de máquinas 
+23.6 
+81.6 
+36 
+0.7 
+Bodega 3 
+24.3 
+80.9 
+37 
+0.7 
+Bodega 3 
+25.0 
+80.2 
+38 
+0.7 
+Bodega 3 
+25.7 
+79.5 
+39 
+0.7 
+Bodega 3 
+26.4 
+78.8 
+40 
+0.7 
+Bodega 3 
+27.1 
+78.1 
+41 
+0.7 
+Bodega 3 
+27.8 
+77.4 
+42 
+0.7 
+Bodega 3 
+28.5 
+76.7 
+43 
+0.7 
+Bodega 3 
+29.2 
+76.0 
+44 
+0.7 
+Bodega 3 
+29.9 
+75.3 
+45 
+0.7 
+Bodega 3 
+30.6 
+74.6 
+46 
+0.7 
+Bodega 3 
+31.3 
+73.9 
+47 
+0.7 
+Bodega 3 
+32.0 
+73.2 
+48 
+0.7 
+Bodega 3 
+32.7 
+72.5 
+49 
+0.7 
+Bodega 3 
+33.4 
+71.8 
+50 
+0.7 
+Bodega 3 
+34.1 
+71.1 
+51 
+0.7 
+Bodega 3 
+34.8 
+70.4 
+52 
+0.7 
+Bodega 3 
+35.5 
+69.7 
+53 
+0.7 
+Bodega 3 
+36.2 
+69.0 
+54 
+0.7 
+Bodega 3 
+36.9 
+68.3 
+55 
+0.7 
+Bodega 3 
+27 
+
+--- Página 29 ---
+37.6 
+67.6 
+56 
+0.7 
+Bodega 3 
+38.3 
+66.9 
+57 
+0.7 
+Bodega 3 
+39.0 
+66.2 
+58 
+0.7 
+Bodega 3 
+39.7 
+65.5 
+59 
+0.7 
+Bodega 3 
+40.4 
+64.8 
+60 
+0.7 
+Bodega 3 
+41.1 
+64.1 
+61 
+0.7 
+Bodega 3 
+41.8 
+63.4 
+62 
+0.7 
+Bodega 3 
+42.5 
+62.7 
+63 
+0.7 
+Bodega 3 
+43.2 
+62.0 
+64 
+0.7 
+Bodega 3 
+43.9 
+61.3 
+65 
+0.7 
+Bodega 3 
+44.6 
+60.6 
+66 
+0.7 
+Bodega 3 
+45.3 
+59.9 
+67 
+0.7 
+Bodega 3 
+46.0 
+59.2 
+68 
+0.7 
+Bodega 2 
+46.7 
+58.5 
+69 
+0.7 
+Bodega 2 
+47.4 
+57.8 
+70 
+0.7 
+Bodega 2 
+48.1 
+57.1 
+71 
+0.7 
+Bodega 2 
+48.8 
+56.4 
+72 
+0.7 
+Bodega 2 
+49.5 
+55.7 
+73 
+0.7 
+Bodega 2 
+50.2 
+55.0 
+74 
+0.7 
+Bodega 2 
+50.9 
+54.3 
+75 
+0.7 
+Bodega 2 
+51.6 
+53.6 
+76 
+0.7 
+Bodega 2 
+52.3 
+52.9 
+77 
+0.7 
+Bodega 2 
+53.0 
+52.2 
+78 
+0.7 
+Bodega 2 
+53.7 
+51.5 
+79 
+0.7 
+Bodega 2 
+54.4 
+50.8 
+80 
+0.7 
+Bodega 2 
+55.1 
+50.1 
+81 
+0.7 
+Bodega 2 
+55.8 
+49.4 
+82 
+0.7 
+Bodega 2 
+56.5 
+48.7 
+83 
+0.7 
+Bodega 2 
+57.2 
+48.0 
+84 
+0.7 
+Bodega 2 
+57.9 
+47.3 
+85 
+0.7 
+Bodega 2 
+58.6 
+46.6 
+86 
+0.7 
+Bodega 2 
+59.3 
+45.9 
+87 
+0.7 
+Bodega 2 
+60.0 
+45.2 
+88 
+0.7 
+Bodega 2 
+60.7 
+44.5 
+89 
+0.7 
+Bodega 2 
+61.4 
+43.8 
+90 
+0.7 
+Bodega 2 
+62.1 
+43.1 
+91 
+0.7 
+Bodega 2 
+62.8 
+42.4 
+92 
+0.7 
+Bodega 2 
+63.5 
+41.7 
+93 
+0.7 
+Bodega 2 
+64.2 
+41.0 
+94 
+0.7 
+Bodega 2 
+64.9 
+40.3 
+95 
+0.7 
+Bodega 2 
+28 
+
+--- Página 30 ---
+65.6 
+39.6 
+96 
+0.7 
+Bodega 2 
+66.3 
+38.9 
+97 
+0.7 
+Bodega 2 
+67.0 
+38.2 
+98 
+0.7 
+Bodega 2 
+67.7 
+37.5 
+99 
+0.7 
+Bodega 2 
+68.4 
+36.8 
+100 
+0.7 
+Bodega 2 
+69.1 
+36.1 
+101 
+0.7 
+Bodega 2 
+69.8 
+35.4 
+102 
+0.7 
+Bodega 2 
+70.5 
+34.7 
+103 
+0.7 
+Bodega 2 
+71.2 
+34.0 
+104 
+0.7 
+Bodega 2 
+71.9 
+33.3 
+105 
+0.7 
+Bodega 2 
+72.6 
+32.6 
+106 
+0.7 
+Bodega 1 
+73.3 
+31.9 
+107 
+0.7 
+Bodega 1 
+74.0 
+31.2 
+108 
+0.7 
+Bodega 1 
+74.7 
+30.5 
+109 
+0.7 
+Bodega 1 
+75.4 
+29.8 
+110 
+0.7 
+Bodega 1 
+76.1 
+29.1 
+111 
+0.7 
+Bodega 1 
+76.8 
+28.4 
+112 
+0.7 
+Bodega 1 
+77.5 
+27.7 
+113 
+0.7 
+Bodega 1 
+78.2 
+27.0 
+114 
+0.7 
+Bodega 1 
+78.9 
+26.3 
+115 
+0.7 
+Bodega 1 
+79.6 
+25.6 
+116 
+0.7 
+Bodega 1 
+80.3 
+24.9 
+117 
+0.7 
+Bodega 1 
+81.0 
+24.2 
+118 
+0.7 
+Bodega 1 
+81.7 
+23.5 
+119 
+0.7 
+Bodega 1 
+82.4 
+22.8 
+120 
+0.7 
+Bodega 1 
+83.1 
+22.1 
+121 
+0.7 
+Bodega 1 
+83.8 
+21.4 
+122 
+0.7 
+Bodega 1 
+84.5 
+20.7 
+123 
+0.7 
+Bodega 1 
+85.2 
+20.0 
+124 
+0.7 
+Bodega 1 
+85.9 
+19.3 
+125 
+0.7 
+Bodega 1 
+86.6 
+18.6 
+126 
+0.7 
+Bodega 1 
+87.3 
+17.9 
+127 
+0.7 
+Bodega 1 
+88.0 
+17.2 
+128 
+0.7 
+Bodega 1 
+88.7 
+16.5 
+129 
+0.7 
+Bodega 1 
+89.4 
+15.8 
+130 
+0.7 
+Bodega 1 
+90.1 
+15.1 
+131 
+0.7 
+Bodega 1 
+90.8 
+14.4 
+132 
+0.7 
+Bodega 1 
+91.5 
+13.7 
+133 
+0.7 
+Bodega 1 
+92.2 
+13.0 
+134 
+0.7 
+Bodega 1 
+92.9 
+12.3 
+135 
+0.7 
+Bodega 1 
+29 
+
+--- Página 31 ---
+93.6 
+11.6 
+136 
+0.7 
+Bodega 1 
+94.3 
+10.9 
+137 
+0.7 
+Bodega 1 
+95.0 
+10.2 
+138 
+0.7 
+Bodega 1 
+95.7 
+9.5 
+139 
+0.7 
+Bodega 1 
+96.4 
+8.8 
+140 
+0.7 
+Bodega 1 
+97.1 
+8.1 
+141 
+0.7 
+Bodega 1 
+97.8 
+7.4 
+142 
+0.7 
+Bodega 1 
+98.5 
+6.7 
+143 
+0.7 
+Bodega 1 
+99.2 
+6.0 
+144 
+0.7 
+Bodega 1 
+99.8 
+5.4 
+145 
+0.6 
+Pique de proa 
+100.4 
+4.8 
+146 
+0.6 
+Pique de proa 
+101.0 
+4.2 
+147 
+0.6 
+Pique de proa 
+101.6 
+3.6 
+148 
+0.6 
+Pique de proa 
+102.2 
+3.0 
+149 
+0.6 
+Pique de proa 
+102.8 
+2.4 
+150 
+0.6 
+Pique de proa 
+103.4 
+1.8 
+151 
+0.6 
+Pique de proa 
+104.0 
+1.2 
+152 
+0.6 
+Pique de proa 
+104.6 
+0.6 
+153 
+0.6 
+Pique de proa 
+105.2 
+0.0 
+154 
+0.6 
+Pique de proa 
+Tabla 9. Posiciones de las cuadernas. 
+ 
+ 
+Conclusiones 
+La labor efectuada ha facilitado la optimización del diseño estructural del barco a través de una organización eficaz 
+de los mamparos y compartimentos, respetando las regulaciones dictadas por DNV. Este método garantiza un 
+balance apropiado entre la operatividad del barco y su seguridad estructural, teniendo en cuenta particularmente la 
+estabilidad en circunstancias de inundación o durante el manejo de cargas dinámicas. Además, se consiguió 
+establecer con exactitud las dimensiones esenciales de los espacios clave del barco, tales como la sala de máquinas, 
+los depósitos y el área de carga. Este procedimiento se realizó empleando programas de cálculo como Excel y 
+programas especializados como Maxsurf Stability, lo que posibilitó comprobar que las especificaciones del 
+proyecto se respetaban con precisión técnica.  
+Finalmente, se examinó minuciosamente la capacidad y la disposición de los tanques, garantizando que fueran 
+apropiados para satisfacer las demandas operativas del barco. La ubicación de estos tanques no solo incrementa la 
+estabilidad del barco, sino que también mejora la accesibilidad y funcionalidad.  
+ 
+ 
+30 
+

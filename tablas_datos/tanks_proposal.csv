@@ -1,0 +1,6 @@
+tank_name,long_m,beam_effective_m,height_m,volume_m3,notes
+FUEL_DB_FORE,24,12,0.6,172.8,"Double-bottom fore (approx)"
+FUEL_DB_AFT,24,12,0.6,172.8,"Double-bottom aft (approx)"
+FUEL_WING_PORT,16,1.2,0.8,15.36,"Wing tank port"
+FUEL_WING_STBD,16,1.2,0.8,15.36,"Wing tank starboard"
+TOTAL,80,,0.6,376.32,"Total fuel capacity of proposed tanks (m^3)"

@@ -1,0 +1,274 @@
+{
+  "fecha_inicio": "2025-11-11T20:10:28.711079",
+  "pasos_completados": [
+    {
+      "paso": 1,
+      "nombre": "Análisis de plano DXF",
+      "estado": "COMPLETADO",
+      "resultado": {
+        "archivo": "salidas/ENTREGA 3 v4/Corte_Transversal_Cuaderna_Maestra_Detallado.dxf",
+        "fecha_analisis": "2025-11-11T20:10:29.016305",
+        "capas": {
+          "CASCO_EXTERIOR": {
+            "existe": true,
+            "entidades": 16,
+            "tipos": [
+              "ARC",
+              "LINE"
+            ]
+          },
+          "ESTRUCTURA_PRIMARIA": {
+            "existe": true,
+            "entidades": 44,
+            "tipos": [
+              "LWPOLYLINE",
+              "LINE"
+            ]
+          },
+          "ESTRUCTURA_SECUNDARIA": {
+            "existe": true,
+            "entidades": 31,
+            "tipos": [
+              "LWPOLYLINE"
+            ]
+          },
+          "MAMPAROS": {
+            "existe": true,
+            "entidades": 4,
+            "tipos": [
+              "LINE"
+            ]
+          },
+          "TANQUES": {
+            "existe": true,
+            "entidades": 0,
+            "tipos": []
+          },
+          "LINEA_AGUA": {
+            "existe": true,
+            "entidades": 1,
+            "tipos": [
+              "LINE"
+            ]
+          },
+          "COTAS": {
+            "existe": true,
+            "entidades": 28,
+            "tipos": [
+              "TEXT",
+              "LINE"
+            ]
+          },
+          "TEXTO": {
+            "existe": true,
+            "entidades": 11,
+            "tipos": [
+              "TEXT",
+              "LWPOLYLINE",
+              "MTEXT"
+            ]
+          },
+          "EJES": {
+            "existe": true,
+            "entidades": 3,
+            "tipos": [
+              "LINE"
+            ]
+          }
+        },
+        "geometria": {
+          "lineas": 75,
+          "arcos": 4,
+          "circulos": 0,
+          "polilineas": 42,
+          "splines": 0,
+          "textos": 17,
+          "cotas": 0
+        },
+        "estructura": {
+          "casco_exterior": {
+            "existe": true,
+            "entidades": 16,
+            "tipos": [
+              "ARC",
+              "LINE"
+            ]
+          },
+          "estructura_primaria": {
+            "existe": true,
+            "entidades": 44,
+            "tipos": [
+              "LWPOLYLINE",
+              "LINE"
+            ]
+          },
+          "estructura_secundaria": {
+            "existe": true,
+            "entidades": 31,
+            "tipos": [
+              "LWPOLYLINE"
+            ]
+          },
+          "mamparos": {
+            "existe": true,
+            "entidades": 4,
+            "tipos": [
+              "LINE"
+            ]
+          },
+          "tanques": {
+            "existe": false,
+            "entidades": 0,
+            "tipos": []
+          }
+        },
+        "dimensiones": {
+          "manga_total": null,
+          "puntal_total": null,
+          "doble_fondo": null,
+          "doble_costado": null,
+          "bbox": {
+            "min_x": -9.8,
+            "min_y": -2.65,
+            "max_x": 12.85,
+            "max_y": 8.7
+          },
+          "manga_estimada": 22.65,
+          "puntal_estimado": 11.35
+        },
+        "errores": [],
+        "advertencias": [
+          "No se encontraron cotas en el plano"
+        ],
+        "info": [
+          "Capa CASCO_EXTERIOR encontrada con 16 entidades",
+          "Capa ESTRUCTURA_PRIMARIA encontrada con 44 entidades",
+          "Capa ESTRUCTURA_SECUNDARIA encontrada con 31 entidades",
+          "Capa MAMPAROS encontrada con 4 entidades",
+          "Capa TANQUES encontrada con 0 entidades",
+          "Capa LINEA_AGUA encontrada con 1 entidades",
+          "Capa COTAS encontrada con 28 entidades",
+          "Capa TEXTO encontrada con 11 entidades",
+          "Capa EJES encontrada con 3 entidades"
+        ],
+        "resumen": {
+          "total_errores": 0,
+          "total_advertencias": 1,
+          "estado": "APROBADO"
+        }
+      }
+    },
+    {
+      "paso": 2,
+      "nombre": "Verificación normativa DNV",
+      "estado": "COMPLETADO",
+      "resultado": {
+        "fecha_verificacion": "2025-11-11T20:10:29.080300",
+        "buque": "Buque Grupo 9",
+        "verificaciones": {
+          "mamparos": {
+            "cumple": true,
+            "normativa": "DNV Pt.3 Ch.2 Sec.2",
+            "descripcion": "Disposición de mamparos estancos",
+            "detalles": [
+              "Cuaderna ubicada en compartimento: bodega_2"
+            ]
+          },
+          "doble_fondo": {
+            "cumple": true,
+            "normativa": "DNV Pt.3 Ch.2 Sec.3",
+            "descripcion": "Altura de doble fondo",
+            "valores": {
+              "minimo_m": 0.799,
+              "real_m": 1.2,
+              "maximo_m": 2.0
+            }
+          },
+          "doble_costado": {
+            "cumple": true,
+            "normativa": "SOLAS II-1 Reg.13",
+            "descripcion": "Ancho de doble costado",
+            "valores": {
+              "minimo_m": 1.066,
+              "real_m": 1.8
+            }
+          },
+          "refuerzos_transversales": {
+            "cumple": true,
+            "normativa": "DNV Pt.3 Ch.3 Sec.2-3",
+            "descripcion": "Espaciamiento de refuerzos transversales",
+            "valores": {
+              "espaciamiento_m": 0.7,
+              "maximo_m": 0.7
+            }
+          },
+          "espesores": {
+            "cumple": false,
+            "normativa": "DNV Pt.3 Ch.3 Sec.4",
+            "descripcion": "Espesores de costados y cubiertas",
+            "valores": {
+              "forro": {
+                "minimo_mm": 23.7,
+                "real_mm": 12.0,
+                "cumple": false
+              },
+              "cubierta": {
+                "minimo_mm": 9.2,
+                "real_mm": 10.0,
+                "cumple": true
+              }
+            }
+          },
+          "modulo_resistente": {
+            "cumple": true,
+            "normativa": "DNV Pt.3 Ch.3 Sec.2",
+            "descripcion": "Módulo resistente de la cuaderna",
+            "valores": {
+              "requerido_cm3": 0.02,
+              "real_cm3": 2500.0,
+              "margen_pct": 13796524.8
+            }
+          },
+          "cargas": {
+            "cumple": true,
+            "normativa": "DNV Pt.3 Ch.5 Sec.1-2",
+            "descripcion": "Casos de carga estructural",
+            "valores": {
+              "presion_hidrostatica_kPa": 0.06,
+              "presion_cubierta_kPa": 10.0,
+              "presion_total_kPa": 10.06
+            }
+          }
+        },
+        "cumplimiento_global": 85.7,
+        "estado": "REQUIERE CORRECCIONES"
+      }
+    },
+    {
+      "paso": 3,
+      "nombre": "Generación de reportes",
+      "estado": "COMPLETADO",
+      "resultado": {
+        "archivos_generados": [
+          "ENTREGA 4/REPORTE_CUADERNA_MAESTRA.md",
+          "ENTREGA 4/graficos/distribucion_geometria.png",
+          "ENTREGA 4/graficos/cumplimiento_dnv.png",
+          "ENTREGA 4/graficos/distribucion_capas.png",
+          "ENTREGA 4/tablas/analisis_capas.xlsx",
+          "ENTREGA 4/tablas/verificaciones_dnv.xlsx"
+        ]
+      }
+    },
+    {
+      "paso": 4,
+      "nombre": "Resumen final",
+      "estado": "COMPLETADO",
+      "resultado": {
+        "archivo": "ENTREGA 4/RESUMEN_EJECUTIVO.md"
+      }
+    }
+  ],
+  "errores": [],
+  "estado": "COMPLETADO EXITOSAMENTE",
+  "fecha_fin": "2025-11-11T20:10:30.837850"
+}

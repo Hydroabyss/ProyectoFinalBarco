@@ -1,0 +1,39 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Instalar dependências",
+            "type": "shell",
+            "command": "./scripts/instalar-dependencias.sh",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Verificar ambiente",
+            "type": "shell",
+            "command": "./scripts/verificar-ambiente.sh",
+            "group": "test"
+        },
+        {
+            "label": "Publicar no Google",
+            "type": "shell",
+            "command": "./scripts/publicar-google.sh",
+            "group": "build",
+            "dependsOn": [
+                "Verificar ambiente"
+            ],
+            "problemMatcher": [],
+            "runOptions": {
+                "runOn": "folderOpen"
+            },
+            "options": {
+                "env": {
+                    "REQUIRED_ENV_VAR_1": "${env:REQUIRED_ENV_VAR_1}",
+                    "REQUIRED_ENV_VAR_2": "${env:REQUIRED_ENV_VAR_2}"
+                }
+            }
+        }
+    ]
+}

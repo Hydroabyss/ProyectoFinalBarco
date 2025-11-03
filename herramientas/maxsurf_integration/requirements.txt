@@ -1,0 +1,25 @@
+# Requisitos para integración con Maxsurf
+# ========================================
+
+# API de Maxsurf (Windows COM - solo en Windows)
+pywin32>=305; platform_system == "Windows"
+
+# Análisis de datos
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Exportación y reportes
+openpyxl>=3.1.0         # Para exportar a Excel
+reportlab>=4.0.0        # Para generar PDFs
+matplotlib>=3.7.0       # Para gráficos
+plotly>=5.0.0           # 3D interactivo HTML
+scipy>=1.10.0           # Utilidades numéricas
+tabulate>=0.9.0         # Markdown tables
+requests>=2.31.0        # Backend remoto opcional
+trimesh>=4.0.0          # Exportar mallas 3D
+numpy-stl>=3.0.0        # Soporte STL
+ezdxf>=1.1.0            # Exportar DXF
+svgwrite>=1.4.3         # Exportar SVG
+
+# Utilidades
+python-dateutil>=2.8.0

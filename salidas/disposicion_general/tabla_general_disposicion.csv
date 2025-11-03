@@ -1,0 +1,5 @@
+segmento,inicio_m,fin_m,long_m,espaciamiento_m,cuadernas
+Pique de proa,0.0,5.26,5.26,0.6,9
+Área de carga,5.26,73.03,67.77,0.7,97
+Cámara de máquinas,73.03,99.07,26.04,0.6,43
+Pique de popa,99.07,105.19999999999999,6.13,0.6,10

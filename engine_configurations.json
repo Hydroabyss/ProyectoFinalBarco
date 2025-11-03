@@ -1,0 +1,59 @@
+{
+  "MAN_6S50ME-C": {
+    "model": "6S50ME-C",
+    "manufacturer": "MAN Energy Solutions",
+    "power_kw": 8500.0,
+    "rpm": 127.0,
+    "cylinders": 6,
+    "dimensions_m": {
+      "length": 8.5,
+      "width": 3.2,
+      "height": 4.1
+    },
+    "weight_tons": 145.0,
+    "sfoc_g_kwh": 185.0,
+    "foundation": {
+      "thickness_mm": 600.0,
+      "reinforcement": "HEB400",
+      "bolts": "M36x300"
+    }
+  },
+  "WARTSILA_16V26": {
+    "model": "16V26",
+    "manufacturer": "Wärtsilä",
+    "power_kw": 5440.0,
+    "rpm": 1000.0,
+    "cylinders": 16,
+    "dimensions_m": {
+      "length": 6.8,
+      "width": 2.9,
+      "height": 3.6
+    },
+    "weight_tons": 98.0,
+    "sfoc_g_kwh": 192.0,
+    "foundation": {
+      "thickness_mm": 450.0,
+      "reinforcement": "HEB320",
+      "bolts": "M30x250"
+    }
+  },
+  "CAT_3512C": {
+    "model": "3512C",
+    "manufacturer": "Caterpillar",
+    "power_kw": 500.0,
+    "rpm": 1800.0,
+    "cylinders": 12,
+    "dimensions_m": {
+      "length": 3.5,
+      "width": 1.8,
+      "height": 2.6
+    },
+    "weight_tons": 12.5,
+    "sfoc_g_kwh": 201.5,
+    "foundation": {
+      "thickness_mm": 350.0,
+      "reinforcement": "HEB240",
+      "bolts": "M24x200"
+    }
+  }
+}
